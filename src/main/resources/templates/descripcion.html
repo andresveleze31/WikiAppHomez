@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentacion - Proyecto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" th:href="@{/css/styles.css}" />
+  </head>
+  <body>
+    <header class="bg-header">
+      <div class="contenedor navegacion">
+        <img
+          class="logo"
+          th:src="@{/images/logo-black.png}"
+          alt="Logo Documentacion"
+        />
+        <nav class="navegacion_enlaces">
+          <a th:href="@{/home}">Home</a>
+          <a th:href="@{/proyecto/descripcion}">Documentacion</a>
+          <a th:href="@{/contacto}">Contacto</a>
+        </nav>
+
+        <a th:href="@{/contacto}" class="btn_primario">Contactanos</a>
+      </div>
+
+      <h1>Descripcion del Proyecto</h1>
+    </header>
+    <main class="main">
+      <div class="nav_main contenedor">
+        <div class="nav_main-flex">
+          <div class="nav_main-enlaces">
+            <img
+              class="nav_icon"
+              th:src="@{/iconos/icon_home.png}"
+              alt="Icon Home"
+            />
+            <div class="nav_main-busqueda">
+              <a th:href="@{/home}">Home</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav_main-calendar">
+          <img
+            class="nav_icon"
+            th:src="@{/iconos/icon_calendar.png}"
+            alt="Calendar Icon"
+          />
+          <p>Actualizado el 05/02/2024</p>
+        </div>
+      </div>
+
+      <div class="contenedor main_doc">
+        <aside class="nav_aside">
+          <h3>Temas Documento</h3>
+
+          <div class="nav_flex">
+            <ul class="dropdown">
+              <li class="dropdown__list">
+                <div class="dropdown__link">
+                  <div class="dropdown__flex">
+                    <img
+                      class="dropdown__icon"
+                      th:src="@{/iconos/icon_project.png}"
+                      alt="Icon Dropdown"
+                    />
+                    <span>Proyecto</span>
+                  </div>
+                  <input type="checkbox" class="dropdown__check" />
+                  <img
+                          th:src="@{/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
+                  />
+                </div>
+
+                <div class="dropdown__content">
+                  <ul class="dropdown__sub">
+                    <li class="dropdown__li">
+                      <a th:href="@{/proyecto/equipo}">
+                        <img
+                                th:src="@{/iconos/icon_document.png}"
+                          alt="Icon Document"
+                        />
+                        <span>El equipo</span>
+                      </a>
+                    </li>
+                    <li class="dropdown__li">
+                      <a th:href="@{/proyecto/descripcion}">
+                        <img
+                                th:src="@{/iconos/icon_document.png}"
+                          alt="Icon Document"
+                        />
+                        <span>Descripción del proyecto</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="dropdown">
+              <li class="dropdown__list">
+                <div class="dropdown__link">
+                  <div class="dropdown__flex">
+                    <img
+                      class="dropdown__icon"
+                      th:src="@{/iconos/icon_carpet.png}"
+                      alt="Icon Dropdown"
+                    />
+                    <span>Requerimientos</span>
+                  </div>
+
+                  <input type="checkbox" class="dropdown__check" />
+                  <img
+                          th:src="@{/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
+                  />
+                </div>
+
+                <div class="dropdown__content">
+                  <ul class="dropdown__sub">
+                    <li class="dropdown__li">
+                      <a th:href="@{/requerimientos/funcionales}">
+                        <img
+                                th:src="@{/iconos/icon_document.png}"
+                          alt="Icon Document"
+                        />
+                        <span>Funcionales</span>
+                      </a>
+                    </li>
+                    <li class="dropdown__li">
+                      <a th:href="@{/requerimientos/nofuncionales}">
+                        <img
+                                th:src="@{/iconos/icon_document.png}"
+                          alt="Icon Document"
+                        />
+                        <span>No Funcionales</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="dropdown">
+              <li class="dropdown__list">
+                <div class="dropdown__link">
+                  <div class="dropdown__flex">
+                    <img
+                      class="dropdown__icon"
+                      th:src="@{/iconos/icon_arq.png}"
+                      alt="Icon Dropdown"
+                    />
+                    <span>Arquitectura</span>
+                  </div>
+
+                  <input type="checkbox" class="dropdown__check" />
+                  <img
+                          th:src="@{/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
+                  />
+                </div>
+
+                <div class="dropdown__content">
+                  <ul class="dropdown__sub">
+                    <li class="dropdown__li">
+                      <a th:href="@{/arquitectura/diagramac4}">
+                        <img
+                                th:src="@{/iconos/icon_document.png}"
+                          alt="Icon Document"
+                        />
+                        <span>Diagramas de referencia C4</span>
+                      </a>
+                    </li>
+                    <li class="dropdown__li">
+                      <a th:href="@{/arquitectura/modelos}">
+                        <img
+                                th:src="@{/iconos/icon_document.png}"
+                          alt="Icon Document"
+                        />
+                        <span>Modelos</span>
+                      </a>
+                    </li>
+                    <li class="dropdown__li">
+                      <a th:href="@{/arquitectura/despliegue}">
+                        <img
+                                th:src="@{/iconos/icon_document.png}"
+                          alt="Icon Document"
+                        />
+                        <span>Diagrama de despliegue</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="dropdown">
+              <li class="dropdown__list">
+                <div class="dropdown__link" >
+                  <div class="dropdown__flex">
+                    <img
+                      class="dropdown__icon"
+                      th:src="@{/iconos/icon_arquitectura.png}"
+                      alt="Icon Dropdown"
+                    />
+                    <span>Desarrollo</span>
+                  </div>
+
+                  <input type="checkbox" class="dropdown__check" />
+                  <img
+                          th:src="@{/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
+                  />
+                </div>
+
+                <div class="dropdown__content">
+                  <ul class="dropdown__sub">
+                    <li class="dropdown__li">
+                      <a th:href="@{/desarrollo/endpoints}">
+                        <img
+                                th:src="@{/iconos/icon_document.png}"
+                          alt="Icon Document"
+                        />
+                        <span>Descripciones de endpoints</span>
+                      </a>
+                    </li>
+                    <li class="dropdown__li">
+                      <a th:href="@{/desarrollo/pruebasfront}">
+                        <img
+                                th:src="@{/iconos/icon_document.png}"
+                          alt="Icon Document"
+                        />
+                        <span>Casos de pruebas frontend</span>
+                      </a>
+                    </li>
+                    <li class="dropdown__li">
+                      <a th:href="@{/desarrollo/pruebasback}">
+                        <img
+                                th:src="@{/iconos/icon_document.png}"
+                          alt="Icon Document"
+                        />
+                        <span>Casos de pruebas backend</span>
+                      </a>
+                    </li>
+                    <li class="dropdown__li">
+                      <a th:href="@{/desarrollo/versiones}">
+                        <img
+                                th:src="@{/iconos/icon_document.png}"
+                          alt="Icon Document"
+                        />
+                        <span>Versiones</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="dropdown">
+              <li class="dropdown__list">
+                <div class="dropdown__link" >
+                  <div class="dropdown__flex">
+                    <img
+                      class="dropdown__icon"
+                      th:src="@{/iconos/icon_contacto.png}"
+                      alt="Icon Dropdown"
+                    />
+                    <span>Contacto</span>
+                  </div>
+
+                  <input type="checkbox" class="dropdown__check" />
+                  <img
+                          th:src="@{/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
+                  />
+                </div>
+
+                <div class="dropdown__content">
+                  <ul class="dropdown__sub">
+                    <li class="dropdown__li">
+                      <a th:href="@{/contacto}">
+                        <img
+                                th:src="@{/iconos/icon_document.png}"
+                          alt="Icon Document"
+                        />
+                        <span>Contactanos</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <div class="main_content">
+          <h2>Nombre del Proyecto</h2>
+
+          <img                                 th:src="@{/images/header-logo.svg}"
+                                               alt="Logo Homez" />
+
+          <p>
+            Homez es una aplicación diseñada para facilitar la gestión de
+            arrendamientos, brindando a dos perfiles principales, el "Usuario
+            Arrendatario" y el "Usuario Arrendador", herramientas específicas
+            para una experiencia eficiente y satisfactoria.
+          </p>
+
+          <h4>Generalidades</h4>
+
+          <p class="negrilla">Acciones Usuario Arrendador</p>
+
+          <ul>
+            <li>
+              <p>
+                Búsqueda de fincas disponibles filtradas por ubicación
+                geográfica.
+              </p>
+            </li>
+            <li>
+              <p>
+                Capacidad para solicitar el arrendamiento de una finca
+                específica.
+              </p>
+            </li>
+            <li>
+              <p>
+                Realización del pago correspondiente una vez aprobada la
+                solicitud.
+              </p>
+            </li>
+            <li>
+              <p>Calificación de la finca arrendada.</p>
+            </li>
+            <li>
+              <p>Calificación del arrendatario.</p>
+            </li>
+          </ul>
+
+          <p class="negrilla">Acciones Usuario Arrendatario</p>
+
+          <ul>
+            <li>
+              <p>
+                Creación, edición, eliminación y actualización de propiedades
+                disponibles para arrendamiento.
+              </p>
+            </li>
+            <li>
+              <p>
+                Revisión y respuesta a todas las solicitudes de arrendamiento
+                recibidas.
+              </p>
+            </li>
+            <li>
+              <p>Opción de aceptar o cancelar solicitudes según corresponda.</p>
+            </li>
+            <li>
+              <p>Verificación de los pagos realizados por los arrendadores.</p>
+            </li>
+            <li>
+              <p>
+                Proporcionar calificaciones y comentarios sobre la experiencia
+                de arrendamiento.
+              </p>
+            </li>
+          </ul>
+
+          <p class="negrilla">Requisitos de Implementacion</p>
+
+          <ul>
+            <li>
+              <p>
+                Integración de un sistema de autenticación y autorización
+                robusto.
+              </p>
+            </li>
+            <li>
+              <p>Gestión de roles y permisos de usuarios de manera efectiva.</p>
+            </li>
+            <li>
+              <p>
+                Desarrollo de interfaces de usuario intuitivas y funcionales.
+              </p>
+            </li>
+            <li>
+              <p>
+                Facilitación de la interacción efectiva de los usuarios con la
+                plataforma. .
+              </p>
+            </li>
+            <li>
+              <p>
+                Proporcionar calificaciones y comentarios sobre la experiencia
+                de arrendamiento.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-footer">
+      <div class="grid_footer contenedor">
+        <div>
+          <img                                 th:src="@{/images/logo-black.png}"
+                                               alt="Logo" />
+          <p>
+            Manage any project from start to finish with highly customizable
+            views that make project planning a breezed out formal.
+          </p>
+        </div>
+
+        <div>
+          <h4>Links</h4>
+          <nav>
+            <a th:href="@{/proyecto/descripcion}">Sobre el Proyecto</a>
+            <a th:href="@{/proyecto/descripcion}">Sobre la Arquitectura</a>
+            <a th:href="@{/proyecto/descripcion}">Sobre los Requerimientos</a>
+            <a th:href="@{/proyecto/descripcion}">Sobre el Desarrollo</a>
+            <a th:href="@{/contacto}">Contactanos</a>
+          </nav>
+        </div>
+
+        <div>
+          <h4>Contacto Rapido</h4>
+          <div class="footer_contacto">
+            <input type="text" placeholder="Ingresa tu email" name="" id="" />
+          </div>
+          <div class="footer_flecha">
+            <p>Contactanos Gratuitamente</p>
+            <img                                 th:src="@{/iconos/icon_arrow.png}"
+                                                 alt="Flecha" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
