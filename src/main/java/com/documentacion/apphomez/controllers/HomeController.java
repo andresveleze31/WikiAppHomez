@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/grupo15")
+@RequestMapping("/wikihomez")
 public class HomeController {
 
     @GetMapping("")
