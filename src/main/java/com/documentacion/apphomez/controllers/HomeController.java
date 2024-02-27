@@ -13,7 +13,7 @@ public class HomeController {
         return "index";
     }
 
-    @GetMapping("/grupo15/home")
+    @GetMapping("/wikihomez/home")
     public String home(Model model) {
         return "index";
     }
