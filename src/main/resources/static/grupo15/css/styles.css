@@ -207,8 +207,6 @@ li p {
   --rows: 1fr;
 }
 
-
-
 .dropdown__arrow {
   width: 1.6rem;
 }
@@ -299,12 +297,11 @@ li p {
 }
 
 .home_round {
-  width: 9rem;
-  height: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  padding: 1rem;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Desplazamiento en x, desplazamiento en y, desenfoque, color de sombra */
 }
 
@@ -517,6 +514,7 @@ details[open] summary ~ * {
 }
 
 .formulario_submit {
+  display: none;
   background-color: #666666;
   color: #f0eaea;
   padding: 1.5rem 8rem;
@@ -527,6 +525,7 @@ details[open] summary ~ * {
   transition: background-color 300ms ease; /* Añadido: Transición solo para el cambio de fondo */
   font-family: "Roboto";
 }
+
 
 .formulario_submit:hover {
   background-color: #3817e3;
@@ -544,6 +543,14 @@ details[open] summary ~ * {
   border: 1px solid #d8d3d3;
   font-family: "Roboto";
   width: 100%;
+}
+
+input:focus {
+  outline: 0;
+}
+
+textarea:focus {
+  outline: 0;
 }
 
 .formulario_campo textarea {
@@ -699,4 +706,60 @@ details[open] summary ~ * {
 .tabs3 .active3 {
   background-color: #ffffff;
   color: #4d5bf9;
+}
+
+.imgperfil {
+  height: 25rem;
+  width: 20rem;
+  object-fit: cover;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 2rem;
+  text-align: left;
+}
+
+td li {
+  text-align: left;
+}
+
+td {
+  color: #666666;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.error {
+  display: none;
+
+  color: red;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.info {
+  display: none;
+  color: #3817e3;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.formulario_campo .input_control {
+  border: 1px solid gray;
+}
+
+.inputEmailMayus {
+  text-transform: uppercase;
 }

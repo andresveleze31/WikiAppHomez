@@ -1,56 +1,56 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Documentacion - Proyecto</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-          rel="stylesheet"
-  />
-  <link rel="stylesheet" th:href="@{/css/styles.css}" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentacion - Proyecto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" th:href="@{/grupo15/css/styles.css}" />
   </head>
   <body>
     <header class="bg-header">
       <div class="contenedor navegacion">
         <img
-                class="logo"
-                th:src="@{/images/logo-black.png}"
-                alt="Logo Documentacion"
+          class="logo"
+          th:src="@{/grupo15/images/logo-black.png}"
+          alt="Logo Documentacion"
         />
         <nav class="navegacion_enlaces">
-          <a th:href="@{/home}">Home</a>
-          <a th:href="@{/proyecto/descripcion}">Documentacion</a>
-          <a th:href="@{/contacto}">Contacto</a>
+          <a th:href="@{/grupo15/home}">Home</a>
+          <a th:href="@{/grupo15/proyecto/descripcion}">Documentacion</a>
+          <a th:href="@{/grupo15/contacto}">Contacto</a>
         </nav>
 
-        <a th:href="@{/contacto}" class="btn_primario">Contactanos</a>
+        <a th:href="@{/grupo15/contacto}" class="btn_primario">Contactanos</a>
       </div>
 
-      <h1>Requerimientos Funcionales</h1>
+      <h1>Requerimientos No Funcionales</h1>
     </header>
     <main class="main">
       <div class="nav_main contenedor">
         <div class="nav_main-flex">
           <div class="nav_main-enlaces">
             <img
-                    class="nav_icon"
-                    th:src="@{/iconos/icon_home.png}"
-                    alt="Icon Home"
+              class="nav_icon"
+              th:src="@{/grupo15/iconos/icon_home.png}"
+              alt="Icon Home"
             />
             <div class="nav_main-busqueda">
-              <a th:href="@{/home}">Home</a>
+              <a th:href="@{/grupo15/home}">Home</a>
             </div>
           </div>
         </div>
 
         <div class="nav_main-calendar">
           <img
-                  class="nav_icon"
-                  th:src="@{/iconos/icon_calendar.png}"
-                  alt="Calendar Icon"
+            class="nav_icon"
+            th:src="@{/grupo15/iconos/icon_calendar.png}"
+            alt="Calendar Icon"
           />
           <p>Actualizado el 05/02/2024</p>
         </div>
@@ -66,36 +66,36 @@
                 <div class="dropdown__link">
                   <div class="dropdown__flex">
                     <img
-                            class="dropdown__icon"
-                            th:src="@{/iconos/icon_project.png}"
-                            alt="Icon Dropdown"
+                      class="dropdown__icon"
+                      th:src="@{/grupo15/iconos/icon_project.png}"
+                      alt="Icon Dropdown"
                     />
                     <span>Proyecto</span>
                   </div>
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                          th:src="@{/iconos/icon_dropdown.png}"
-                          class="dropdown__arrow"
-                          alt="Dropdown"
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
                   />
                 </div>
 
                 <div class="dropdown__content">
                   <ul class="dropdown__sub">
                     <li class="dropdown__li">
-                      <a th:href="@{/proyecto/equipo}">
+                      <a th:href="@{/grupo15/proyecto/equipo}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>El equipo</span>
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/proyecto/descripcion}">
+                      <a th:href="@{/grupo15/proyecto/descripcion}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Descripción del proyecto</span>
                       </a>
@@ -110,37 +110,37 @@
                 <div class="dropdown__link">
                   <div class="dropdown__flex">
                     <img
-                            class="dropdown__icon"
-                            th:src="@{/iconos/icon_carpet.png}"
-                            alt="Icon Dropdown"
+                      class="dropdown__icon"
+                      th:src="@{/grupo15/iconos/icon_carpet.png}"
+                      alt="Icon Dropdown"
                     />
                     <span>Requerimientos</span>
                   </div>
 
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                          th:src="@{/iconos/icon_dropdown.png}"
-                          class="dropdown__arrow"
-                          alt="Dropdown"
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
                   />
                 </div>
 
                 <div class="dropdown__content">
                   <ul class="dropdown__sub">
                     <li class="dropdown__li">
-                      <a th:href="@{/requerimientos/funcionales}">
+                      <a th:href="@{/grupo15/requerimientos/funcionales}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Funcionales</span>
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/requerimientos/nofuncionales}">
+                      <a th:href="@{/grupo15/requerimientos/nofuncionales}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>No Funcionales</span>
                       </a>
@@ -155,46 +155,46 @@
                 <div class="dropdown__link">
                   <div class="dropdown__flex">
                     <img
-                            class="dropdown__icon"
-                            th:src="@{/iconos/icon_arq.png}"
-                            alt="Icon Dropdown"
+                      class="dropdown__icon"
+                      th:src="@{/grupo15/iconos/icon_arq.png}"
+                      alt="Icon Dropdown"
                     />
                     <span>Arquitectura</span>
                   </div>
 
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                          th:src="@{/iconos/icon_dropdown.png}"
-                          class="dropdown__arrow"
-                          alt="Dropdown"
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
                   />
                 </div>
 
                 <div class="dropdown__content">
                   <ul class="dropdown__sub">
                     <li class="dropdown__li">
-                      <a th:href="@{/arquitectura/diagramac4}">
+                      <a th:href="@{/grupo15/arquitectura/diagramac4}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Diagramas de referencia C4</span>
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/arquitectura/modelos}">
+                      <a th:href="@{/grupo15/arquitectura/modelos}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Modelos</span>
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/arquitectura/despliegue}">
+                      <a th:href="@{/grupo15/arquitectura/despliegue}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Diagrama de despliegue</span>
                       </a>
@@ -206,58 +206,58 @@
 
             <ul class="dropdown">
               <li class="dropdown__list">
-                <div class="dropdown__link" >
+                <div class="dropdown__link">
                   <div class="dropdown__flex">
                     <img
-                            class="dropdown__icon"
-                            th:src="@{/iconos/icon_arquitectura.png}"
-                            alt="Icon Dropdown"
+                      class="dropdown__icon"
+                      th:src="@{/grupo15/iconos/icon_arquitectura.png}"
+                      alt="Icon Dropdown"
                     />
                     <span>Desarrollo</span>
                   </div>
 
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                          th:src="@{/iconos/icon_dropdown.png}"
-                          class="dropdown__arrow"
-                          alt="Dropdown"
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
                   />
                 </div>
 
                 <div class="dropdown__content">
                   <ul class="dropdown__sub">
                     <li class="dropdown__li">
-                      <a th:href="@{/desarrollo/endpoints}">
+                      <a th:href="@{/grupo15/desarrollo/endpoints}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Descripciones de endpoints</span>
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/desarrollo/pruebasfront}">
+                      <a th:href="@{/grupo15/desarrollo/pruebasfront}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Casos de pruebas frontend</span>
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/desarrollo/pruebasback}">
+                      <a th:href="@{/grupo15/desarrollo/pruebasback}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Casos de pruebas backend</span>
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/desarrollo/versiones}">
+                      <a th:href="@{/grupo15/desarrollo/versiones}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Versiones</span>
                       </a>
@@ -269,31 +269,31 @@
 
             <ul class="dropdown">
               <li class="dropdown__list">
-                <div class="dropdown__link" >
+                <div class="dropdown__link">
                   <div class="dropdown__flex">
                     <img
-                            class="dropdown__icon"
-                            th:src="@{/iconos/icon_contacto.png}"
-                            alt="Icon Dropdown"
+                      class="dropdown__icon"
+                      th:src="@{/grupo15/iconos/icon_contacto.png}"
+                      alt="Icon Dropdown"
                     />
                     <span>Contacto</span>
                   </div>
 
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                          th:src="@{/iconos/icon_dropdown.png}"
-                          class="dropdown__arrow"
-                          alt="Dropdown"
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
                   />
                 </div>
 
                 <div class="dropdown__content">
                   <ul class="dropdown__sub">
                     <li class="dropdown__li">
-                      <a th:href="@{/contacto}">
+                      <a th:href="@{/grupo15/contacto}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Contactanos</span>
                       </a>
@@ -306,17 +306,12 @@
         </aside>
 
         <div class="main_content">
-          <h2>Requerimientos Funcionales por HUA.</h2>
+          <h2>Requerimientos No Funcionales por HUA.</h2>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-            consequuntur aliquid, optio, aspernatur, quis iure tempore deserunt
-            beatae fugiat sed tempora voluptatibus deleniti explicabo.
-            Accusantium aliquam minima doloribus earum dignissimos? Lorem, ipsum
-            dolor sit amet consectetur adipisicing elit. Fugit, consequatur ad.
-            Deleniti sit autem inventore dolores, hic accusantium laboriosam
-            sapiente corrupti, veritatis doloribus ratione placeat voluptatem
-            non facilis alias nostrum.
+            Acontinuacion se presentan por casos de uso, separados por Usuario
+            Arrendador y Usuario Arrendatorio, los requerimientos no funcionales
+            de la aplicacion web.
           </p>
 
           <h4>Usuario Arrendador</h4>
@@ -332,7 +327,7 @@
                   realizar las actividades del sistema.
                 </p>
 
-                <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
+                <p class="negrilla">REQUERIMIENTOS NO FUNCIONALES</p>
 
                 <ul>
                   <li>
@@ -398,7 +393,7 @@
                   para poder acceder de forma segura a mi cuenta.
                 </p>
 
-                <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
+                <p class="negrilla">REQUERIMIENTOS NO FUNCIONALES</p>
 
                 <ul>
                   <li>
@@ -479,7 +474,7 @@
                   sistema me va a permitir.
                 </p>
 
-                <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
+                <p class="negrilla">REQUERIMIENTOS NO FUNCIONALES</p>
 
                 <ul>
                   <li>
@@ -539,7 +534,7 @@
                   poder arrendarlas.
                 </p>
 
-                <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
+                <p class="negrilla">REQUERIMIENTOS NO FUNCIONALES</p>
 
                 <ul>
                   <li>
@@ -617,7 +612,7 @@
                   poder arrendarlas y actualizar la información.
                 </p>
 
-                <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
+                <p class="negrilla">REQUERIMIENTOS NO FUNCIONALES</p>
 
                 <ul>
                   <li>
@@ -712,7 +707,7 @@
                   posible.
                 </p>
 
-                <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
+                <p class="negrilla">REQUERIMIENTOS NO FUNCIONALES</p>
 
                 <ul>
                   <li>
@@ -770,7 +765,7 @@
                   disposición.
                 </p>
 
-                <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
+                <p class="negrilla">REQUERIMIENTOS NO FUNCIONALES</p>
 
                 <ul>
                   <li>
@@ -830,7 +825,7 @@
                   personal para mantenerla actualizada en el sistema.
                 </p>
 
-                <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
+                <p class="negrilla">REQUERIMIENTOS NO FUNCIONALES</p>
 
                 <ul>
                   <li>
@@ -890,7 +885,7 @@
                   arriendo para poder gestionar las solicitudes entrantes.
                 </p>
 
-                <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
+                <p class="negrilla">REQUERIMIENTOS NO FUNCIONALES</p>
 
                 <ul>
                   <li>
@@ -947,7 +942,7 @@
                   pendientes.
                 </p>
 
-                <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
+                <p class="negrilla">REQUERIMIENTOS NO FUNCIONALES</p>
 
                 <ul>
                   <li>
@@ -1003,7 +998,7 @@
                   para evaluar su desempeño y facilitar futuros arrendamientos.
                 </p>
 
-                <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
+                <p class="negrilla">REQUERIMIENTOS NO FUNCIONALES</p>
 
                 <ul>
                   <li>
@@ -1081,7 +1076,7 @@
                   necesarios para gestionar propiedades.
                 </p>
 
-                <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
+                <p class="negrilla">REQUERIMIENTOS NO FUNCIONALES</p>
 
                 <ul>
                   <li>
@@ -1178,7 +1173,7 @@
                   realizar las actividades del sistema.
                 </p>
 
-                <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
+                <p class="negrilla">REQUERIMIENTOS NO FUNCIONALES</p>
 
                 <ul>
                   <li>
@@ -1220,7 +1215,7 @@
                   sistema para poder acceder de forma segura a mi cuenta.
                 </p>
 
-                <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
+                <p class="negrilla">REQUERIMIENTOS NO FUNCIONALES</p>
 
                 <ul>
                   <li>
@@ -1290,7 +1285,7 @@
                   poder solicitar el arriendo en fechas específicas.
                 </p>
 
-                <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
+                <p class="negrilla">REQUERIMIENTOS NO FUNCIONALES</p>
 
                 <ul>
                   <li>
@@ -1348,7 +1343,7 @@
                   posible arriendo.
                 </p>
 
-                <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
+                <p class="negrilla">REQUERIMIENTOS NO FUNCIONALES</p>
 
                 <ul>
                   <li>
@@ -1434,7 +1429,7 @@
                   sistema para verificar mis solicitudes de arriendo.
                 </p>
 
-                <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
+                <p class="negrilla">REQUERIMIENTOS NO FUNCIONALES</p>
 
                 <ul>
                   <li>
@@ -1502,7 +1497,7 @@
                   sistema para pagar los arriendos.
                 </p>
 
-                <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
+                <p class="negrilla">REQUERIMIENTOS NO FUNCIONALES</p>
 
                 <ul>
                   <li>
@@ -1546,7 +1541,7 @@
                   poder cerrar y verificar qué tan buenos son los arrendatarios.
                 </p>
 
-                <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
+                <p class="negrilla">REQUERIMIENTOS NO FUNCIONALES</p>
 
                 <ul>
                   <li>
@@ -1605,7 +1600,7 @@
                   arrendatarios.
                 </p>
 
-                <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
+                <p class="negrilla">REQUERIMIENTOS NO FUNCIONALES</p>
 
                 <ul>
                   <li>
@@ -1659,21 +1654,21 @@
     <footer class="bg-footer">
       <div class="grid_footer contenedor">
         <div>
-          <img src="../../../../../Spring/Documy/Documentacion%20Proyecto/public/img/logo-black.png" alt="Logo" />
+          <img src="/grupo15/images/logo-black.png" alt="Logo" />
           <p>
-            Manage any project from start to finish with highly customizable
-            views that make project planning a breezed out formal.
+            Descubre Homez, un proyecto que permite innovar la forma en la que
+            eliges una propiedad
           </p>
         </div>
 
         <div>
           <h4>Links</h4>
           <nav>
-            <a href="">Sobre el Proyecto</a>
-            <a href="">Sobre la Arquitectura</a>
-            <a href="">Sobre los Requerimientos</a>
-            <a href="">Sobre el Desarrollo</a>
-            <a href="">Contactanos</a>
+            <a th:href="@{/grupo15/componente/proyecto}">Sobre el Proyecto</a>
+            <a th:href="@{/grupo15/componente/arquitectura}">Sobre la Arquitectura</a>
+            <a th:href="@{/grupo15/componente/requerimientos}">Sobre los Requerimientos</a>
+            <a th:href="@{/grupo15/componente/desarrollo}">Sobre el Desarrollo</a>
+            <a th:href="@{/grupo15/contacto}">Contactanos</a>
           </nav>
         </div>
 
@@ -1684,8 +1679,8 @@
           </div>
           <div class="footer_flecha">
             <p>Contactanos Gratuitamente</p>
-            <img                                 th:src="@{/iconos/icon_arrow.png}"
-                                                 alt="Flecha" />          </div>
+            <img th:src="@{/grupo15/iconos/icon_arrow.png}" alt="Flecha" />
+          </div>
         </div>
       </div>
     </footer>

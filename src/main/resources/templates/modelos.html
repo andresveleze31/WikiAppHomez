@@ -10,23 +10,23 @@
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
           rel="stylesheet"
   />
-  <link rel="stylesheet" th:href="@{/css/styles.css}" />
+  <link rel="stylesheet" th:href="@{/grupo15/css/styles.css}" />
   </head>
   <body>
     <header class="bg-header">
       <div class="contenedor navegacion">
         <img
                 class="logo"
-                th:src="@{/images/logo-black.png}"
+                th:src="@{/grupo15/images/logo-black.png}"
                 alt="Logo Documentacion"
         />
         <nav class="navegacion_enlaces">
-          <a th:href="@{/home}">Home</a>
-          <a th:href="@{/proyecto/descripcion}">Documentacion</a>
-          <a th:href="@{/contacto}">Contacto</a>
+          <a th:href="@{/grupo15/home}">Home</a>
+          <a th:href="@{/grupo15/proyecto/descripcion}">Documentacion</a>
+          <a th:href="@{/grupo15/contacto}">Contacto</a>
         </nav>
 
-        <a th:href="@{/contacto}" class="btn_primario">Contactanos</a>
+        <a th:href="@{/grupo15/contacto}" class="btn_primario">Contactanos</a>
       </div>
 
       <h1>Modelos</h1>
@@ -37,11 +37,11 @@
           <div class="nav_main-enlaces">
             <img
                     class="nav_icon"
-                    th:src="@{/iconos/icon_home.png}"
+                    th:src="@{/grupo15/iconos/icon_home.png}"
                     alt="Icon Home"
             />
             <div class="nav_main-busqueda">
-              <a th:href="@{/home}">Home</a>
+              <a th:href="@{/grupo15/home}">Home</a>
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@
         <div class="nav_main-calendar">
           <img
                   class="nav_icon"
-                  th:src="@{/iconos/icon_calendar.png}"
+                  th:src="@{/grupo15/iconos/icon_calendar.png}"
                   alt="Calendar Icon"
           />
           <p>Actualizado el 05/02/2024</p>
@@ -67,14 +67,14 @@
                   <div class="dropdown__flex">
                     <img
                             class="dropdown__icon"
-                            th:src="@{/iconos/icon_project.png}"
+                            th:src="@{/grupo15/iconos/icon_project.png}"
                             alt="Icon Dropdown"
                     />
                     <span>Proyecto</span>
                   </div>
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                          th:src="@{/iconos/icon_dropdown.png}"
+                          th:src="@{/grupo15/iconos/icon_dropdown.png}"
                           class="dropdown__arrow"
                           alt="Dropdown"
                   />
@@ -83,18 +83,18 @@
                 <div class="dropdown__content">
                   <ul class="dropdown__sub">
                     <li class="dropdown__li">
-                      <a th:href="@{/proyecto/equipo}">
+                      <a th:href="@{/grupo15/proyecto/equipo}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
+                                th:src="@{/grupo15/iconos/icon_document.png}"
                                 alt="Icon Document"
                         />
                         <span>El equipo</span>
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/proyecto/descripcion}">
+                      <a th:href="@{/grupo15/proyecto/descripcion}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
+                                th:src="@{/grupo15/iconos/icon_document.png}"
                                 alt="Icon Document"
                         />
                         <span>Descripción del proyecto</span>
@@ -111,7 +111,7 @@
                   <div class="dropdown__flex">
                     <img
                             class="dropdown__icon"
-                            th:src="@{/iconos/icon_carpet.png}"
+                            th:src="@{/grupo15/iconos/icon_carpet.png}"
                             alt="Icon Dropdown"
                     />
                     <span>Requerimientos</span>
@@ -119,7 +119,7 @@
 
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                          th:src="@{/iconos/icon_dropdown.png}"
+                          th:src="@{/grupo15/iconos/icon_dropdown.png}"
                           class="dropdown__arrow"
                           alt="Dropdown"
                   />
@@ -128,18 +128,18 @@
                 <div class="dropdown__content">
                   <ul class="dropdown__sub">
                     <li class="dropdown__li">
-                      <a th:href="@{/requerimientos/funcionales}">
+                      <a th:href="@{/grupo15/requerimientos/funcionales}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
+                                th:src="@{/grupo15/iconos/icon_document.png}"
                                 alt="Icon Document"
                         />
                         <span>Funcionales</span>
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/requerimientos/nofuncionales}">
+                      <a th:href="@{/grupo15/requerimientos/nofuncionales}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
+                                th:src="@{/grupo15/iconos/icon_document.png}"
                                 alt="Icon Document"
                         />
                         <span>No Funcionales</span>
@@ -156,7 +156,7 @@
                   <div class="dropdown__flex">
                     <img
                             class="dropdown__icon"
-                            th:src="@{/iconos/icon_arq.png}"
+                            th:src="@{/grupo15/iconos/icon_arq.png}"
                             alt="Icon Dropdown"
                     />
                     <span>Arquitectura</span>
@@ -164,7 +164,7 @@
 
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                          th:src="@{/iconos/icon_dropdown.png}"
+                          th:src="@{/grupo15/iconos/icon_dropdown.png}"
                           class="dropdown__arrow"
                           alt="Dropdown"
                   />
@@ -173,27 +173,27 @@
                 <div class="dropdown__content">
                   <ul class="dropdown__sub">
                     <li class="dropdown__li">
-                      <a th:href="@{/arquitectura/diagramac4}">
+                      <a th:href="@{/grupo15/arquitectura/diagramac4}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
+                                th:src="@{/grupo15/iconos/icon_document.png}"
                                 alt="Icon Document"
                         />
                         <span>Diagramas de referencia C4</span>
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/arquitectura/modelos}">
+                      <a th:href="@{/grupo15/arquitectura/modelos}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
+                                th:src="@{/grupo15/iconos/icon_document.png}"
                                 alt="Icon Document"
                         />
                         <span>Modelos</span>
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/arquitectura/despliegue}">
+                      <a th:href="@{/grupo15/arquitectura/despliegue}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
+                                th:src="@{/grupo15/iconos/icon_document.png}"
                                 alt="Icon Document"
                         />
                         <span>Diagrama de despliegue</span>
@@ -210,7 +210,7 @@
                   <div class="dropdown__flex">
                     <img
                             class="dropdown__icon"
-                            th:src="@{/iconos/icon_arquitectura.png}"
+                            th:src="@{/grupo15/iconos/icon_arquitectura.png}"
                             alt="Icon Dropdown"
                     />
                     <span>Desarrollo</span>
@@ -218,7 +218,7 @@
 
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                          th:src="@{/iconos/icon_dropdown.png}"
+                          th:src="@{/grupo15/iconos/icon_dropdown.png}"
                           class="dropdown__arrow"
                           alt="Dropdown"
                   />
@@ -227,36 +227,36 @@
                 <div class="dropdown__content">
                   <ul class="dropdown__sub">
                     <li class="dropdown__li">
-                      <a th:href="@{/desarrollo/endpoints}">
+                      <a th:href="@{/grupo15/desarrollo/endpoints}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
+                                th:src="@{/grupo15/iconos/icon_document.png}"
                                 alt="Icon Document"
                         />
                         <span>Descripciones de endpoints</span>
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/desarrollo/pruebasfront}">
+                      <a th:href="@{/grupo15/desarrollo/pruebasfront}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
+                                th:src="@{/grupo15/iconos/icon_document.png}"
                                 alt="Icon Document"
                         />
                         <span>Casos de pruebas frontend</span>
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/desarrollo/pruebasback}">
+                      <a th:href="@{/grupo15/desarrollo/pruebasback}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
+                                th:src="@{/grupo15/iconos/icon_document.png}"
                                 alt="Icon Document"
                         />
                         <span>Casos de pruebas backend</span>
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/desarrollo/versiones}">
+                      <a th:href="@{/grupo15/desarrollo/versiones}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
+                                th:src="@{/grupo15/iconos/icon_document.png}"
                                 alt="Icon Document"
                         />
                         <span>Versiones</span>
@@ -273,7 +273,7 @@
                   <div class="dropdown__flex">
                     <img
                             class="dropdown__icon"
-                            th:src="@{/iconos/icon_contacto.png}"
+                            th:src="@{/grupo15/iconos/icon_contacto.png}"
                             alt="Icon Dropdown"
                     />
                     <span>Contacto</span>
@@ -281,7 +281,7 @@
 
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                          th:src="@{/iconos/icon_dropdown.png}"
+                          th:src="@{/grupo15/iconos/icon_dropdown.png}"
                           class="dropdown__arrow"
                           alt="Dropdown"
                   />
@@ -290,9 +290,9 @@
                 <div class="dropdown__content">
                   <ul class="dropdown__sub">
                     <li class="dropdown__li">
-                      <a th:href="@{/contacto}">
+                      <a th:href="@{/grupo15/contacto}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
+                                th:src="@{/grupo15/iconos/icon_document.png}"
                                 alt="Icon Document"
                         />
                         <span>Contactanos</span>
@@ -309,22 +309,16 @@
           <h2>Modelos</h2>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-            molestias, facilis doloribus neque qui, nesciunt nulla, id officiis
-            eos cum sapiente culpa nihil illo? Omnis reiciendis ea nisi velit
-            sint.
+            Los siguientes modelos desempeñan un papel fundamental al proporcionar representaciones visuales y conceptuales que facilitan la comprensión, diseño y comunicación de aspectos clave del sistema. A continuación, se describen los propósitos comunes de algunos modelos:
           </p>
 
           <div class="seccion_diagrama">
             <h4>Diagrama de Entidad/Relacion</h4>
             <p class="diagramas_parrafo">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
-              aliquam omnis suscipit perspiciatis vitae repellendus hic, dolore
-              mollitia maiores fugit expedita ut minus autem ea, ducimus totam
-              est, excepturi itaque.
+              El Diagrama de Entidad/Relación (DER) es una representación visual que ilustra las entidades dentro de un sistema y las relaciones entre ellas. Este modelo ofrece una visión clara de la estructura de la base de datos, identificando entidades como objetos clave y las conexiones entre ellas. En el contexto de la arquitectura de datos, el DER proporciona un marco comprensible para diseñar y entender la relación entre diversos elementos, facilitando la conceptualización y el diseño eficiente de la base de datos. Este diagrama es esencial para los desarrolladores y diseñadores de bases de datos, permitiéndoles visualizar de manera intuitiva cómo se organizan y relacionan las entidades en el sistema.
             </p>
 
-            <img src="../../../../../Spring/Documy/Documentacion%20Proyecto/public/img/modeloconceptual.png" alt="" />
+            <img src="/grupo15/images/modeloconceptual.png" alt="" />
           </div>
         </div>
       </div>
@@ -333,21 +327,21 @@
     <footer class="bg-footer">
       <div class="grid_footer contenedor">
         <div>
-          <img src="../../../../../Spring/Documy/Documentacion%20Proyecto/public/img/logo-black.png" alt="Logo" />
+          <img src="/grupo15/images/logo-black.png" alt="Logo" />
           <p>
-            Manage any project from start to finish with highly customizable
-            views that make project planning a breezed out formal.
+            Descubre Homez, un proyecto que permite innovar la forma en la que
+            eliges una propiedad
           </p>
         </div>
 
         <div>
           <h4>Links</h4>
           <nav>
-            <a href="">Sobre el Proyecto</a>
-            <a href="">Sobre la Arquitectura</a>
-            <a href="">Sobre los Requerimientos</a>
-            <a href="">Sobre el Desarrollo</a>
-            <a href="">Contactanos</a>
+            <a th:href="@{/grupo15/componente/proyecto}">Sobre el Proyecto</a>
+            <a th:href="@{/grupo15/componente/arquitectura}">Sobre la Arquitectura</a>
+            <a th:href="@{/grupo15/componente/requerimientos}">Sobre los Requerimientos</a>
+            <a th:href="@{/grupo15/componente/desarrollo}">Sobre el Desarrollo</a>
+            <a th:href="@{/grupo15/contacto}">Contactanos</a>
           </nav>
         </div>
 
@@ -358,8 +352,8 @@
           </div>
           <div class="footer_flecha">
             <p>Contactanos Gratuitamente</p>
-            <img                                 th:src="@{/iconos/icon_arrow.png}"
-                                                 alt="Flecha" />          </div>
+            <img th:src="@{/grupo15/iconos/icon_arrow.png}" alt="Flecha" />
+          </div>
         </div>
       </div>
     </footer>

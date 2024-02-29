@@ -22,7 +22,7 @@ public class ContactController {
     @PostMapping("/registro")
     public String procesarFormulario(@RequestParam String nombres, @RequestParam String apellidos, @RequestParam String correo, @RequestParam int semestre, @RequestParam String mensaje ){
         contactRepository.guardarIntereasado(nombres,apellidos,correo,semestre,mensaje);
-        return "redirect:/home";
+        return "redirect:/grupo15";
     }
 
 }

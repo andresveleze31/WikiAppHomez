@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Documentacion - Proyecto</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-          rel="stylesheet"
-  />
-  <link rel="stylesheet" th:href="@{/css/styles.css}" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentacion - Proyecto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" th:href="@{/grupo15/css/styles.css}" />
   </head>
   <body>
     <header class="bg-header">
       <div class="contenedor navegacion">
         <img
-                class="logo"
-                th:src="@{/images/logo-black.png}"
-                alt="Logo Documentacion"
+          class="logo"
+          th:src="@{/grupo15/images/logo-black.png}"
+          alt="Logo Documentacion"
         />
         <nav class="navegacion_enlaces">
-          <a th:href="@{/home}">Home</a>
-          <a th:href="@{/proyecto/descripcion}">Documentacion</a>
-          <a th:href="@{/contacto}">Contacto</a>
+          <a th:href="@{/grupo15/home}">Home</a>
+          <a th:href="@{/grupo15/proyecto/descripcion}">Documentacion</a>
+          <a th:href="@{/grupo15/contacto}">Contacto</a>
         </nav>
 
-        <a th:href="@{/contacto}" class="btn_primario">Contactanos</a>
+        <a th:href="@{/grupo15/contacto}" class="btn_primario">Contactanos</a>
       </div>
 
       <h1>Requerimientos Funcionales</h1>
@@ -36,21 +36,21 @@
         <div class="nav_main-flex">
           <div class="nav_main-enlaces">
             <img
-                    class="nav_icon"
-                    th:src="@{/iconos/icon_home.png}"
-                    alt="Icon Home"
+              class="nav_icon"
+              th:src="@{/grupo15/iconos/icon_home.png}"
+              alt="Icon Home"
             />
             <div class="nav_main-busqueda">
-              <a th:href="@{/home}">Home</a>
+              <a th:href="@{/grupo15/home}">Home</a>
             </div>
           </div>
         </div>
 
         <div class="nav_main-calendar">
           <img
-                  class="nav_icon"
-                  th:src="@{/iconos/icon_calendar.png}"
-                  alt="Calendar Icon"
+            class="nav_icon"
+            th:src="@{/grupo15/iconos/icon_calendar.png}"
+            alt="Calendar Icon"
           />
           <p>Actualizado el 05/02/2024</p>
         </div>
@@ -66,36 +66,36 @@
                 <div class="dropdown__link">
                   <div class="dropdown__flex">
                     <img
-                            class="dropdown__icon"
-                            th:src="@{/iconos/icon_project.png}"
-                            alt="Icon Dropdown"
+                      class="dropdown__icon"
+                      th:src="@{/grupo15/iconos/icon_project.png}"
+                      alt="Icon Dropdown"
                     />
                     <span>Proyecto</span>
                   </div>
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                          th:src="@{/iconos/icon_dropdown.png}"
-                          class="dropdown__arrow"
-                          alt="Dropdown"
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
                   />
                 </div>
 
                 <div class="dropdown__content">
                   <ul class="dropdown__sub">
                     <li class="dropdown__li">
-                      <a th:href="@{/proyecto/equipo}">
+                      <a th:href="@{/grupo15/proyecto/equipo}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>El equipo</span>
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/proyecto/descripcion}">
+                      <a th:href="@{/grupo15/proyecto/descripcion}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Descripción del proyecto</span>
                       </a>
@@ -110,37 +110,37 @@
                 <div class="dropdown__link">
                   <div class="dropdown__flex">
                     <img
-                            class="dropdown__icon"
-                            th:src="@{/iconos/icon_carpet.png}"
-                            alt="Icon Dropdown"
+                      class="dropdown__icon"
+                      th:src="@{/grupo15/iconos/icon_carpet.png}"
+                      alt="Icon Dropdown"
                     />
                     <span>Requerimientos</span>
                   </div>
 
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                          th:src="@{/iconos/icon_dropdown.png}"
-                          class="dropdown__arrow"
-                          alt="Dropdown"
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
                   />
                 </div>
 
                 <div class="dropdown__content">
                   <ul class="dropdown__sub">
                     <li class="dropdown__li">
-                      <a th:href="@{/requerimientos/funcionales}">
+                      <a th:href="@{/grupo15/requerimientos/funcionales}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Funcionales</span>
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/requerimientos/nofuncionales}">
+                      <a th:href="@{/grupo15/requerimientos/nofuncionales}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>No Funcionales</span>
                       </a>
@@ -155,46 +155,46 @@
                 <div class="dropdown__link">
                   <div class="dropdown__flex">
                     <img
-                            class="dropdown__icon"
-                            th:src="@{/iconos/icon_arq.png}"
-                            alt="Icon Dropdown"
+                      class="dropdown__icon"
+                      th:src="@{/grupo15/iconos/icon_arq.png}"
+                      alt="Icon Dropdown"
                     />
                     <span>Arquitectura</span>
                   </div>
 
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                          th:src="@{/iconos/icon_dropdown.png}"
-                          class="dropdown__arrow"
-                          alt="Dropdown"
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
                   />
                 </div>
 
                 <div class="dropdown__content">
                   <ul class="dropdown__sub">
                     <li class="dropdown__li">
-                      <a th:href="@{/arquitectura/diagramac4}">
+                      <a th:href="@{/grupo15/arquitectura/diagramac4}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Diagramas de referencia C4</span>
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/arquitectura/modelos}">
+                      <a th:href="@{/grupo15/arquitectura/modelos}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Modelos</span>
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/arquitectura/despliegue}">
+                      <a th:href="@{/grupo15/arquitectura/despliegue}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Diagrama de despliegue</span>
                       </a>
@@ -206,58 +206,58 @@
 
             <ul class="dropdown">
               <li class="dropdown__list">
-                <div class="dropdown__link" >
+                <div class="dropdown__link">
                   <div class="dropdown__flex">
                     <img
-                            class="dropdown__icon"
-                            th:src="@{/iconos/icon_arquitectura.png}"
-                            alt="Icon Dropdown"
+                      class="dropdown__icon"
+                      th:src="@{/grupo15/iconos/icon_arquitectura.png}"
+                      alt="Icon Dropdown"
                     />
                     <span>Desarrollo</span>
                   </div>
 
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                          th:src="@{/iconos/icon_dropdown.png}"
-                          class="dropdown__arrow"
-                          alt="Dropdown"
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
                   />
                 </div>
 
                 <div class="dropdown__content">
                   <ul class="dropdown__sub">
                     <li class="dropdown__li">
-                      <a th:href="@{/desarrollo/endpoints}">
+                      <a th:href="@{/grupo15/desarrollo/endpoints}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Descripciones de endpoints</span>
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/desarrollo/pruebasfront}">
+                      <a th:href="@{/grupo15/desarrollo/pruebasfront}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Casos de pruebas frontend</span>
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/desarrollo/pruebasback}">
+                      <a th:href="@{/grupo15/desarrollo/pruebasback}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Casos de pruebas backend</span>
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/desarrollo/versiones}">
+                      <a th:href="@{/grupo15/desarrollo/versiones}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Versiones</span>
                       </a>
@@ -269,31 +269,31 @@
 
             <ul class="dropdown">
               <li class="dropdown__list">
-                <div class="dropdown__link" >
+                <div class="dropdown__link">
                   <div class="dropdown__flex">
                     <img
-                            class="dropdown__icon"
-                            th:src="@{/iconos/icon_contacto.png}"
-                            alt="Icon Dropdown"
+                      class="dropdown__icon"
+                      th:src="@{/grupo15/iconos/icon_contacto.png}"
+                      alt="Icon Dropdown"
                     />
                     <span>Contacto</span>
                   </div>
 
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                          th:src="@{/iconos/icon_dropdown.png}"
-                          class="dropdown__arrow"
-                          alt="Dropdown"
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
                   />
                 </div>
 
                 <div class="dropdown__content">
                   <ul class="dropdown__sub">
                     <li class="dropdown__li">
-                      <a th:href="@{/contacto}">
+                      <a th:href="@{/grupo15/contacto}">
                         <img
-                                th:src="@{/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Contactanos</span>
                       </a>
@@ -309,18 +309,12 @@
           <h2>Requerimientos Funcionales por HUA.</h2>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-            consequuntur aliquid, optio, aspernatur, quis iure tempore deserunt
-            beatae fugiat sed tempora voluptatibus deleniti explicabo.
-            Accusantium aliquam minima doloribus earum dignissimos? Lorem, ipsum
-            dolor sit amet consectetur adipisicing elit. Fugit, consequatur ad.
-            Deleniti sit autem inventore dolores, hic accusantium laboriosam
-            sapiente corrupti, veritatis doloribus ratione placeat voluptatem
-            non facilis alias nostrum.
+            Acontinuacion se presentan por casos de uso, separados por Usuario
+            Arrendador y Usuario Arrendatorio, los requerimientos funcionales de
+            la aplicacion web.
           </p>
 
           <h4>Usuario Arrendador</h4>
-
 
           <div class="detalles">
             <details>
@@ -708,40 +702,49 @@
               <div class="summary_content">
                 <p class="negrilla">DESCRIPCIÓN</p>
                 <p>
-                  Como un usuario arrendador, quiero subir fotos de las propiedades para poder arrendar y mostrarlas de la mejor forma posible.
+                  Como un usuario arrendador, quiero subir fotos de las
+                  propiedades para poder arrendar y mostrarlas de la mejor forma
+                  posible.
                 </p>
-            
+
                 <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
-            
+
                 <ul>
                   <li>
                     <p class="negrilla">Acceso a la Página de Propiedades:</p>
                     <ul>
                       <li>
                         <p>
-                          Al ingresar a la página donde se visualizan todas las propiedades, el sistema debe proporcionar un botón por cada propiedad que permita ir al formulario de subida de fotos.
+                          Al ingresar a la página donde se visualizan todas las
+                          propiedades, el sistema debe proporcionar un botón por
+                          cada propiedad que permita ir al formulario de subida
+                          de fotos.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Botón para Subir Foto:</p>
                     <ul>
                       <li>
                         <p>
-                          En la página de creación de propiedad, debe haber un botón que muestre el formulario de subida de fotos.
+                          En la página de creación de propiedad, debe haber un
+                          botón que muestre el formulario de subida de fotos.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Subida de Foto:</p>
                     <ul>
                       <li>
                         <p>
-                          Una vez que el usuario seleccione y suba la foto, el sistema debe redirigirlo a la página de la propiedad donde podrá ver la información actualizada de la propiedad.
+                          Una vez que el usuario seleccione y suba la foto, el
+                          sistema debe redirigirlo a la página de la propiedad
+                          donde podrá ver la información actualizada de la
+                          propiedad.
                         </p>
                       </li>
                     </ul>
@@ -750,7 +753,6 @@
               </div>
             </details>
 
-
             <!--CU 8-->
 
             <details>
@@ -758,40 +760,53 @@
               <div class="summary_content">
                 <p class="negrilla">DESCRIPCIÓN</p>
                 <p>
-                  Como un usuario arrendador, quiero desactivar propiedades para que no me arrienden propiedades que ya no tengo en mi disposición.
+                  Como un usuario arrendador, quiero desactivar propiedades para
+                  que no me arrienden propiedades que ya no tengo en mi
+                  disposición.
                 </p>
-            
+
                 <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
-            
+
                 <ul>
                   <li>
                     <p class="negrilla">Acceso a la Página de Propiedades:</p>
                     <ul>
                       <li>
                         <p>
-                          Al ingresar a la página donde se visualizan todas las propiedades, el sistema debe proporcionar un botón por cada propiedad que permita mostrar un diálogo de confirmación para desactivarla.
+                          Al ingresar a la página donde se visualizan todas las
+                          propiedades, el sistema debe proporcionar un botón por
+                          cada propiedad que permita mostrar un diálogo de
+                          confirmación para desactivarla.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
-                    <p class="negrilla">Diálogo de Confirmación para Desactivar:</p>
+                    <p class="negrilla">
+                      Diálogo de Confirmación para Desactivar:
+                    </p>
                     <ul>
                       <li>
                         <p>
-                          En la página de propiedades, al hacer clic en el botón de desactivar, se debe mostrar un diálogo de confirmación que permita al usuario confirmar la desactivación de la propiedad.
+                          En la página de propiedades, al hacer clic en el botón
+                          de desactivar, se debe mostrar un diálogo de
+                          confirmación que permita al usuario confirmar la
+                          desactivación de la propiedad.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Propiedad Desactivada:</p>
                     <ul>
                       <li>
                         <p>
-                          Una vez confirmada la desactivación, la propiedad debe ser marcada como desactivada en la base de datos y no deberá ser visible para el usuario arrendador en la lista de propiedades.
+                          Una vez confirmada la desactivación, la propiedad debe
+                          ser marcada como desactivada en la base de datos y no
+                          deberá ser visible para el usuario arrendador en la
+                          lista de propiedades.
                         </p>
                       </li>
                     </ul>
@@ -806,40 +821,51 @@
               <div class="summary_content">
                 <p class="negrilla">DESCRIPCIÓN</p>
                 <p>
-                  Como un usuario arrendador, quiero modificar mi información personal para mantenerla actualizada en el sistema.
+                  Como un usuario arrendador, quiero modificar mi información
+                  personal para mantenerla actualizada en el sistema.
                 </p>
-            
+
                 <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
-            
+
                 <ul>
                   <li>
                     <p class="negrilla">Acceso a la Página de Perfil:</p>
                     <ul>
                       <li>
                         <p>
-                          Al ingresar a la página de perfil, el sistema debe proporcionar un botón o enlace que permita acceder al formulario de modificación de información personal.
+                          Al ingresar a la página de perfil, el sistema debe
+                          proporcionar un botón o enlace que permita acceder al
+                          formulario de modificación de información personal.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
-                    <p class="negrilla">Formulario de Modificación de Información:</p>
+                    <p class="negrilla">
+                      Formulario de Modificación de Información:
+                    </p>
                     <ul>
                       <li>
                         <p>
-                          En la página de modificación de información personal, se deben proporcionar campos editables para los datos que el usuario arrendador desea modificar, como nombre, dirección, número de contacto, entre otros.
+                          En la página de modificación de información personal,
+                          se deben proporcionar campos editables para los datos
+                          que el usuario arrendador desea modificar, como
+                          nombre, dirección, número de contacto, entre otros.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Actualización Exitosa:</p>
                     <ul>
                       <li>
                         <p>
-                          Después de realizar las modificaciones, el sistema debe procesar la información actualizada y confirmar la actualización exitosa del perfil del usuario arrendador.
+                          Después de realizar las modificaciones, el sistema
+                          debe procesar la información actualizada y confirmar
+                          la actualización exitosa del perfil del usuario
+                          arrendador.
                         </p>
                       </li>
                     </ul>
@@ -855,40 +881,47 @@
               <div class="summary_content">
                 <p class="negrilla">DESCRIPCIÓN</p>
                 <p>
-                  Como un usuario arrendador, quiero aceptar la solicitud de arriendo para poder gestionar las solicitudes entrantes.
+                  Como un usuario arrendador, quiero aceptar la solicitud de
+                  arriendo para poder gestionar las solicitudes entrantes.
                 </p>
-            
+
                 <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
-            
+
                 <ul>
                   <li>
                     <p class="negrilla">Visualización de Solicitudes:</p>
                     <ul>
                       <li>
                         <p>
-                          En los listados de solicitudes, el sistema debe mostrar un botón de "Aceptar". Este botón solo estará habilitado para las solicitudes que están pendientes de aceptación.
+                          En los listados de solicitudes, el sistema debe
+                          mostrar un botón de "Aceptar". Este botón solo estará
+                          habilitado para las solicitudes que están pendientes
+                          de aceptación.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Habilitación del Botón de Aceptar:</p>
                     <ul>
                       <li>
                         <p>
-                          El botón de "Aceptar" solo se habilitará para las solicitudes que aún no han sido aceptadas.
+                          El botón de "Aceptar" solo se habilitará para las
+                          solicitudes que aún no han sido aceptadas.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Cambio de Estado:</p>
                     <ul>
                       <li>
                         <p>
-                          Una vez se acepte la solicitud, esta debe cambiar de estado, indicando que está en espera de pago por parte del arrendatario.
+                          Una vez se acepte la solicitud, esta debe cambiar de
+                          estado, indicando que está en espera de pago por parte
+                          del arrendatario.
                         </p>
                       </li>
                     </ul>
@@ -904,40 +937,48 @@
               <div class="summary_content">
                 <p class="negrilla">DESCRIPCIÓN</p>
                 <p>
-                  Como un usuario arrendador, quiero cancelar la solicitud de arriendo para gestionar de manera flexible las solicitudes pendientes.
+                  Como un usuario arrendador, quiero cancelar la solicitud de
+                  arriendo para gestionar de manera flexible las solicitudes
+                  pendientes.
                 </p>
-            
+
                 <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
-            
+
                 <ul>
                   <li>
                     <p class="negrilla">Visualización de Solicitudes:</p>
                     <ul>
                       <li>
                         <p>
-                          En los listados de solicitudes, el sistema debe mostrar un botón de "Cancelar". Este botón solo estará habilitado para las solicitudes que están pendientes de aceptación.
+                          En los listados de solicitudes, el sistema debe
+                          mostrar un botón de "Cancelar". Este botón solo estará
+                          habilitado para las solicitudes que están pendientes
+                          de aceptación.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Habilitación del Botón de Cancelar:</p>
                     <ul>
                       <li>
                         <p>
-                          El botón de "Cancelar" solo se habilitará para las solicitudes que aún no han sido aceptadas.
+                          El botón de "Cancelar" solo se habilitará para las
+                          solicitudes que aún no han sido aceptadas.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Cambio de Estado:</p>
                     <ul>
                       <li>
                         <p>
-                          Una vez se cancele la solicitud, esta debe cambiar de estado, indicando que ha sido cancelada por el arrendador.
+                          Una vez se cancele la solicitud, esta debe cambiar de
+                          estado, indicando que ha sido cancelada por el
+                          arrendador.
                         </p>
                       </li>
                     </ul>
@@ -953,51 +994,65 @@
               <div class="summary_content">
                 <p class="negrilla">DESCRIPCIÓN</p>
                 <p>
-                  Como un usuario arrendador, quiero calificar al arrendatario para evaluar su desempeño y facilitar futuros arrendamientos.
+                  Como un usuario arrendador, quiero calificar al arrendatario
+                  para evaluar su desempeño y facilitar futuros arrendamientos.
                 </p>
-            
+
                 <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
-            
+
                 <ul>
                   <li>
-                    <p class="negrilla">Visualización de Solicitudes por Calificar:</p>
+                    <p class="negrilla">
+                      Visualización de Solicitudes por Calificar:
+                    </p>
                     <ul>
                       <li>
                         <p>
-                          El sistema mostrará la lista de solicitudes pendientes de calificación solo si el usuario arrendador está por calificar y ya ha pasado la fecha de entrega.
+                          El sistema mostrará la lista de solicitudes pendientes
+                          de calificación solo si el usuario arrendador está por
+                          calificar y ya ha pasado la fecha de entrega.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Botón de Calificar:</p>
                     <ul>
                       <li>
                         <p>
-                          En caso de ser necesario calificar, se mostrará un botón de "Calificar" para cada solicitud pertinente.
+                          En caso de ser necesario calificar, se mostrará un
+                          botón de "Calificar" para cada solicitud pertinente.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Formulario de Calificación:</p>
                     <ul>
                       <li>
                         <p>
-                          Al hacer clic en el botón de "Calificar", el sistema llevará al usuario arrendador a un formulario de calificación. Este formulario incluirá la posibilidad de asignar una puntuación y dejar un comentario.
+                          Al hacer clic en el botón de "Calificar", el sistema
+                          llevará al usuario arrendador a un formulario de
+                          calificación. Este formulario incluirá la posibilidad
+                          de asignar una puntuación y dejar un comentario.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Verificación de Calificaciones:</p>
                     <ul>
                       <li>
                         <p>
-                          Después de que el usuario arrendador califica al arrendatario y a la finca, el sistema verificará que ambas partes hayan sido calificadas. Si ambas partes están calificadas, el estado de la solicitud pasa a "Cerrado"; de lo contrario, se mantiene en el estado actual.
+                          Después de que el usuario arrendador califica al
+                          arrendatario y a la finca, el sistema verificará que
+                          ambas partes hayan sido calificadas. Si ambas partes
+                          están calificadas, el estado de la solicitud pasa a
+                          "Cerrado"; de lo contrario, se mantiene en el estado
+                          actual.
                         </p>
                       </li>
                     </ul>
@@ -1008,7 +1063,6 @@
 
             <h4>Usuario Arrendatario</h4>
 
-
             <!--OTRO-->
             <!--HU 13-->
 
@@ -1017,73 +1071,89 @@
               <div class="summary_content">
                 <p class="negrilla">DESCRIPCIÓN</p>
                 <p>
-                  Como un usuario arrendatario, quiero poder crear una cuenta en el sistema para acceder a las herramientas y recursos necesarios para gestionar propiedades.
+                  Como un usuario arrendatario, quiero poder crear una cuenta en
+                  el sistema para acceder a las herramientas y recursos
+                  necesarios para gestionar propiedades.
                 </p>
-            
+
                 <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
-            
+
                 <ul>
                   <li>
                     <p class="negrilla">Opción de Crear Cuenta:</p>
                     <ul>
                       <li>
                         <p>
-                          Cuando el usuario accede al sistema por primera vez, se mostrará una opción clara para crear una cuenta de usuario.
+                          Cuando el usuario accede al sistema por primera vez,
+                          se mostrará una opción clara para crear una cuenta de
+                          usuario.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Formulario de Registro:</p>
                     <ul>
                       <li>
                         <p>
-                          Al hacer clic en "Crear cuenta", el sistema redirigirá al usuario a un formulario de registro donde se debe proporcionar información obligatoria, como nombres, apellidos, correo electrónico, teléfono y contraseña.
+                          Al hacer clic en "Crear cuenta", el sistema redirigirá
+                          al usuario a un formulario de registro donde se debe
+                          proporcionar información obligatoria, como nombres,
+                          apellidos, correo electrónico, teléfono y contraseña.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Validaciones del Formulario:</p>
                     <ul>
                       <li>
                         <p>
-                          El sistema realizará validaciones para garantizar que el correo electrónico sea único y válido, cumpla con las políticas de nomenclatura de la empresa y que la contraseña tenga al menos 8 caracteres.
+                          El sistema realizará validaciones para garantizar que
+                          el correo electrónico sea único y válido, cumpla con
+                          las políticas de nomenclatura de la empresa y que la
+                          contraseña tenga al menos 8 caracteres.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Confirmación de Creación de Cuenta:</p>
                     <ul>
                       <li>
                         <p>
-                          Después de enviar el formulario, el usuario recibirá una confirmación de que la cuenta ha sido creada con éxito, junto con un enlace para activar la cuenta.
+                          Después de enviar el formulario, el usuario recibirá
+                          una confirmación de que la cuenta ha sido creada con
+                          éxito, junto con un enlace para activar la cuenta.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Manejo de Errores:</p>
                     <ul>
                       <li>
                         <p>
-                          En caso de ingresar información incorrecta o no válida, el sistema mostrará mensajes de error claros que indiquen cómo corregir los problemas.
+                          En caso de ingresar información incorrecta o no
+                          válida, el sistema mostrará mensajes de error claros
+                          que indiquen cómo corregir los problemas.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Acceso a Herramientas y Recursos:</p>
                     <ul>
                       <li>
                         <p>
-                          Después de crear la cuenta y acceder al sistema, el usuario tendrá acceso a las herramientas y recursos necesarios para llevar a cabo sus responsabilidades.
+                          Después de crear la cuenta y acceder al sistema, el
+                          usuario tendrá acceso a las herramientas y recursos
+                          necesarios para llevar a cabo sus responsabilidades.
                         </p>
                       </li>
                     </ul>
@@ -1098,29 +1168,36 @@
               <div class="summary_content">
                 <p class="negrilla">DESCRIPCIÓN</p>
                 <p>
-                  Como un usuario arrendatario, quiero activar mi cuenta para poder acceder a las herramientas y recursos necesarios para realizar las actividades del sistema.
+                  Como un usuario arrendatario, quiero activar mi cuenta para
+                  poder acceder a las herramientas y recursos necesarios para
+                  realizar las actividades del sistema.
                 </p>
-            
+
                 <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
-            
+
                 <ul>
                   <li>
                     <p class="negrilla">Correo de Activación:</p>
                     <ul>
                       <li>
                         <p>
-                          Cuando el usuario reciba el correo de activación, este contendrá un enlace único y seguro para activar la cuenta.
+                          Cuando el usuario reciba el correo de activación, este
+                          contendrá un enlace único y seguro para activar la
+                          cuenta.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Activación de Cuenta:</p>
                     <ul>
                       <li>
                         <p>
-                          Al hacer clic en el enlace de activación proporcionado en el correo, la cuenta del usuario se activará y se le redirigirá al inicio de la cuenta para poder realizar sus actividades.
+                          Al hacer clic en el enlace de activación proporcionado
+                          en el correo, la cuenta del usuario se activará y se
+                          le redirigirá al inicio de la cuenta para poder
+                          realizar sus actividades.
                         </p>
                       </li>
                     </ul>
@@ -1129,57 +1206,66 @@
               </div>
             </details>
 
-            
             <details>
               <summary>HUA.15. Autenticación</summary>
               <div class="summary_content">
                 <p class="negrilla">DESCRIPCIÓN</p>
                 <p>
-                  Como un usuario arrendatario, quiero autenticarme en el sistema para poder acceder de forma segura a mi cuenta.
+                  Como un usuario arrendatario, quiero autenticarme en el
+                  sistema para poder acceder de forma segura a mi cuenta.
                 </p>
-            
+
                 <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
-            
+
                 <ul>
                   <li>
-                    <p class="negrilla">Redirección a Página de Autenticación:</p>
+                    <p class="negrilla">
+                      Redirección a Página de Autenticación:
+                    </p>
                     <ul>
                       <li>
                         <p>
-                          Al intentar acceder a cualquier página sin estar autenticado, el sistema redireccionará al usuario a la página de autenticación.
+                          Al intentar acceder a cualquier página sin estar
+                          autenticado, el sistema redireccionará al usuario a la
+                          página de autenticación.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Formulario de Autenticación:</p>
                     <ul>
                       <li>
                         <p>
-                          En la página de autenticación, el usuario encontrará un formulario con los campos de correo y contraseña.
+                          En la página de autenticación, el usuario encontrará
+                          un formulario con los campos de correo y contraseña.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Inicio de Sesión Exitoso:</p>
                     <ul>
                       <li>
                         <p>
-                          Al ingresar la información de forma correcta en el formulario de autenticación, el sistema llevará al usuario al inicio de sesión.
+                          Al ingresar la información de forma correcta en el
+                          formulario de autenticación, el sistema llevará al
+                          usuario al inicio de sesión.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Gestión de Errores:</p>
                     <ul>
                       <li>
                         <p>
-                          En caso de ingreso incorrecto de datos en el formulario, el sistema mostrará mensajes de error adecuados.
+                          En caso de ingreso incorrecto de datos en el
+                          formulario, el sistema mostrará mensajes de error
+                          adecuados.
                         </p>
                       </li>
                     </ul>
@@ -1187,7 +1273,6 @@
                 </ul>
               </div>
             </details>
-            
 
             <!--HUA 16-->
 
@@ -1196,40 +1281,48 @@
               <div class="summary_content">
                 <p class="negrilla">DESCRIPCIÓN</p>
                 <p>
-                  Como un usuario arrendatario, quiero buscar propiedades para poder solicitar el arriendo en fechas específicas.
+                  Como un usuario arrendatario, quiero buscar propiedades para
+                  poder solicitar el arriendo en fechas específicas.
                 </p>
-            
+
                 <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
-            
+
                 <ul>
                   <li>
                     <p class="negrilla">Listado Inicial de Propiedades:</p>
                     <ul>
                       <li>
                         <p>
-                          El usuario ingresará a un sitio donde se mostrará un listado de propiedades. La lista inicial será de un municipio seleccionado por la herramienta al azar.
+                          El usuario ingresará a un sitio donde se mostrará un
+                          listado de propiedades. La lista inicial será de un
+                          municipio seleccionado por la herramienta al azar.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Búsqueda por Características:</p>
                     <ul>
                       <li>
                         <p>
-                          El usuario podrá realizar la búsqueda de propiedades por características como nombre, municipio y cantidad de personas.
+                          El usuario podrá realizar la búsqueda de propiedades
+                          por características como nombre, municipio y cantidad
+                          de personas.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Listado de Propiedades:</p>
                     <ul>
                       <li>
                         <p>
-                          El listado de propiedades mostrará, como mínimo, las siguientes columnas: Imagen chiquita descriptiva de la imagen, nombre, departamento, municipio y un enlace para ver el detalle de la propiedad.
+                          El listado de propiedades mostrará, como mínimo, las
+                          siguientes columnas: Imagen chiquita descriptiva de la
+                          imagen, nombre, departamento, municipio y un enlace
+                          para ver el detalle de la propiedad.
                         </p>
                       </li>
                     </ul>
@@ -1245,62 +1338,79 @@
               <div class="summary_content">
                 <p class="negrilla">DESCRIPCIÓN</p>
                 <p>
-                  Como un usuario arrendatario, quiero solicitar el arriendo de una propiedad para realizar el paso previo para pagar el posible arriendo.
+                  Como un usuario arrendatario, quiero solicitar el arriendo de
+                  una propiedad para realizar el paso previo para pagar el
+                  posible arriendo.
                 </p>
-            
+
                 <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
-            
+
                 <ul>
                   <li>
                     <p class="negrilla">Botón de Solicitar Arriendo:</p>
                     <ul>
                       <li>
                         <p>
-                          Al ingresar al detalle de la propiedad, el arrendatario encontrará un botón que le permitirá solicitar el arriendo.
+                          Al ingresar al detalle de la propiedad, el
+                          arrendatario encontrará un botón que le permitirá
+                          solicitar el arriendo.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Formulario de Solicitud:</p>
                     <ul>
                       <li>
                         <p>
-                          Al hacer clic en el botón de solicitar arriendo, se mostrará un formulario con campos como fecha inicial, fecha final y cantidad de personas.
+                          Al hacer clic en el botón de solicitar arriendo, se
+                          mostrará un formulario con campos como fecha inicial,
+                          fecha final y cantidad de personas.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Validación de Datos:</p>
                     <ul>
                       <li>
                         <p>
-                          El sistema validará que la fecha inicial no sea anterior a la fecha actual, que la fecha final no sea anterior a un día posterior a la fecha inicial y que la cantidad de personas no sea superior a la capacidad permitida por la propiedad.
+                          El sistema validará que la fecha inicial no sea
+                          anterior a la fecha actual, que la fecha final no sea
+                          anterior a un día posterior a la fecha inicial y que
+                          la cantidad de personas no sea superior a la capacidad
+                          permitida por la propiedad.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
-                    <p class="negrilla">Redirección y Ordenamiento de Solicitudes:</p>
+                    <p class="negrilla">
+                      Redirección y Ordenamiento de Solicitudes:
+                    </p>
                     <ul>
                       <li>
                         <p>
-                          Una vez que se llenen de forma correcta los campos del formulario, se redirigirá al usuario al listado de solicitudes, ordenadas de las más reciente a la más antigua.
+                          Una vez que se llenen de forma correcta los campos del
+                          formulario, se redirigirá al usuario al listado de
+                          solicitudes, ordenadas de las más reciente a la más
+                          antigua.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Mensaje de Error:</p>
                     <ul>
                       <li>
                         <p>
-                          En caso de que no se llenen de forma correcta los campos del formulario, el sistema mostrará un mensaje notificando la razón del error.
+                          En caso de que no se llenen de forma correcta los
+                          campos del formulario, el sistema mostrará un mensaje
+                          notificando la razón del error.
                         </p>
                       </li>
                     </ul>
@@ -1315,51 +1425,60 @@
               <div class="summary_content">
                 <p class="negrilla">DESCRIPCIÓN</p>
                 <p>
-                  Como un usuario arrendatario, quiero autenticarme en el sistema para verificar mis solicitudes de arriendo.
+                  Como un usuario arrendatario, quiero autenticarme en el
+                  sistema para verificar mis solicitudes de arriendo.
                 </p>
-            
+
                 <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
-            
+
                 <ul>
                   <li>
                     <p class="negrilla">Acceso al Menú de Solicitudes:</p>
                     <ul>
                       <li>
                         <p>
-                          En el menú principal, los usuarios podrán hacer clic y verificar todas las solicitudes de reserva hechas por el usuario.
+                          En el menú principal, los usuarios podrán hacer clic y
+                          verificar todas las solicitudes de reserva hechas por
+                          el usuario.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Datos en la Tabla de Solicitudes:</p>
                     <ul>
                       <li>
                         <p>
-                          Los datos que se podrán ver en la tabla de solicitudes son: nombre de predio, fecha y hora de solicitud, fecha de llegada, fecha de salida, valor y estado.
+                          Los datos que se podrán ver en la tabla de solicitudes
+                          son: nombre de predio, fecha y hora de solicitud,
+                          fecha de llegada, fecha de salida, valor y estado.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Botón para Pago:</p>
                     <ul>
                       <li>
                         <p>
-                          Cuando la solicitud esté en estado de pago, deberá aparecer un botón que permita ir a realizar el pago.
+                          Cuando la solicitud esté en estado de pago, deberá
+                          aparecer un botón que permita ir a realizar el pago.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Calificación y Comentario:</p>
                     <ul>
                       <li>
                         <p>
-                          Cuando la solicitud esté en estado de calificación, aparecerá la posibilidad de calificar e insertar un comentario tanto para calificar el predio como para calificar el anfitrión.
+                          Cuando la solicitud esté en estado de calificación,
+                          aparecerá la posibilidad de calificar e insertar un
+                          comentario tanto para calificar el predio como para
+                          calificar el anfitrión.
                         </p>
                       </li>
                     </ul>
@@ -1374,29 +1493,36 @@
               <div class="summary_content">
                 <p class="negrilla">DESCRIPCIÓN</p>
                 <p>
-                  Como un usuario arrendatario, quiero autenticarme en el sistema para pagar los arriendos.
+                  Como un usuario arrendatario, quiero autenticarme en el
+                  sistema para pagar los arriendos.
                 </p>
-            
+
                 <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
-            
+
                 <ul>
                   <li>
                     <p class="negrilla">Acceso al Pago:</p>
                     <ul>
                       <li>
                         <p>
-                          En el listado de solicitudes de arriendo, cuando la solicitud esté en estado de pago y no esté vencida, aparecerá un botón donde se podrá realizar el pago.
+                          En el listado de solicitudes de arriendo, cuando la
+                          solicitud esté en estado de pago y no esté vencida,
+                          aparecerá un botón donde se podrá realizar el pago.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Formulario de Pago:</p>
                     <ul>
                       <li>
                         <p>
-                          Al hacer clic en el botón de pago, se abrirá un formulario donde se mostrarán los datos de pago, especialmente el valor (que se actualizará automáticamente), el banco (seleccionado de un listado) y el número de cuenta.
+                          Al hacer clic en el botón de pago, se abrirá un
+                          formulario donde se mostrarán los datos de pago,
+                          especialmente el valor (que se actualizará
+                          automáticamente), el banco (seleccionado de un
+                          listado) y el número de cuenta.
                         </p>
                       </li>
                     </ul>
@@ -1411,40 +1537,49 @@
               <div class="summary_content">
                 <p class="negrilla">DESCRIPCIÓN</p>
                 <p>
-                  Como un usuario arrendador, quiero calificar la finca para poder cerrar y verificar qué tan buenos son los arrendatarios.
+                  Como un usuario arrendador, quiero calificar la finca para
+                  poder cerrar y verificar qué tan buenos son los arrendatarios.
                 </p>
-            
+
                 <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
-            
+
                 <ul>
                   <li>
                     <p class="negrilla">Acceso a la Lista de Solicitudes:</p>
                     <ul>
                       <li>
                         <p>
-                          El usuario arrendador verá la lista de solicitudes solo en caso de estar por calificar y ya se haya pasado la fecha de entrega.
+                          El usuario arrendador verá la lista de solicitudes
+                          solo en caso de estar por calificar y ya se haya
+                          pasado la fecha de entrega.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Botón de Calificar:</p>
                     <ul>
                       <li>
                         <p>
-                          Al hacer clic en el botón de calificar, se llevará al usuario arrendador al formulario de calificación, donde también se pedirá un comentario.
+                          Al hacer clic en el botón de calificar, se llevará al
+                          usuario arrendador al formulario de calificación,
+                          donde también se pedirá un comentario.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Verificación de Calificaciones:</p>
                     <ul>
                       <li>
                         <p>
-                          Una vez calificada la finca y el arrendatario, se verificará que el usuario arrendador haya completado ambas calificaciones. En caso de que todo esté calificado, la solicitud pasa a estado cerrado; en caso contrario, mantiene el estado.
+                          Una vez calificada la finca y el arrendatario, se
+                          verificará que el usuario arrendador haya completado
+                          ambas calificaciones. En caso de que todo esté
+                          calificado, la solicitud pasa a estado cerrado; en
+                          caso contrario, mantiene el estado.
                         </p>
                       </li>
                     </ul>
@@ -1460,40 +1595,50 @@
               <div class="summary_content">
                 <p class="negrilla">DESCRIPCIÓN</p>
                 <p>
-                  Como un usuario arrendador, quiero calificar al arrendatario para poder cerrar y verificar qué tan buenos son los arrendatarios.
+                  Como un usuario arrendador, quiero calificar al arrendatario
+                  para poder cerrar y verificar qué tan buenos son los
+                  arrendatarios.
                 </p>
-            
+
                 <p class="negrilla">REQUERIMIENTOS FUNCIONALES</p>
-            
+
                 <ul>
                   <li>
                     <p class="negrilla">Acceso a la Lista de Solicitudes:</p>
                     <ul>
                       <li>
                         <p>
-                          El usuario arrendador verá la lista de solicitudes solo en caso de estar por calificar y ya se haya pasado la fecha de entrega.
+                          El usuario arrendador verá la lista de solicitudes
+                          solo en caso de estar por calificar y ya se haya
+                          pasado la fecha de entrega.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Botón de Calificar:</p>
                     <ul>
                       <li>
                         <p>
-                          Al hacer clic en el botón de calificar, se llevará al usuario arrendador al formulario de calificación, donde también se pedirá un comentario.
+                          Al hacer clic en el botón de calificar, se llevará al
+                          usuario arrendador al formulario de calificación,
+                          donde también se pedirá un comentario.
                         </p>
                       </li>
                     </ul>
                   </li>
-            
+
                   <li>
                     <p class="negrilla">Verificación de Calificaciones:</p>
                     <ul>
                       <li>
                         <p>
-                          Una vez calificado el arrendatario, se verificará que el usuario arrendador haya completado la calificación. En caso de que todo esté calificado, la solicitud pasa a estado cerrado; en caso contrario, mantiene el estado.
+                          Una vez calificado el arrendatario, se verificará que
+                          el usuario arrendador haya completado la calificación.
+                          En caso de que todo esté calificado, la solicitud pasa
+                          a estado cerrado; en caso contrario, mantiene el
+                          estado.
                         </p>
                       </li>
                     </ul>
@@ -1501,9 +1646,7 @@
                 </ul>
               </div>
             </details>
-
           </div>
-
         </div>
       </div>
     </main>
@@ -1511,21 +1654,21 @@
     <footer class="bg-footer">
       <div class="grid_footer contenedor">
         <div>
-          <img src="../../../../../Spring/Documy/Documentacion%20Proyecto/public/img/logo-black.png" alt="Logo" />
+          <img src="/grupo15/images/logo-black.png" alt="Logo" />
           <p>
-            Manage any project from start to finish with highly customizable
-            views that make project planning a breezed out formal.
+            Descubre Homez, un proyecto que permite innovar la forma en la que
+            eliges una propiedad
           </p>
         </div>
 
         <div>
           <h4>Links</h4>
           <nav>
-            <a href="">Sobre el Proyecto</a>
-            <a href="">Sobre la Arquitectura</a>
-            <a href="">Sobre los Requerimientos</a>
-            <a href="">Sobre el Desarrollo</a>
-            <a href="">Contactanos</a>
+            <a th:href="@{/grupo15/componente/proyecto}">Sobre el Proyecto</a>
+            <a th:href="@{/grupo15/componente/arquitectura}">Sobre la Arquitectura</a>
+            <a th:href="@{/grupo15/componente/requerimientos}">Sobre los Requerimientos</a>
+            <a th:href="@{/grupo15/componente/desarrollo}">Sobre el Desarrollo</a>
+            <a th:href="@{/grupo15/contacto}">Contactanos</a>
           </nav>
         </div>
 
@@ -1536,8 +1679,7 @@
           </div>
           <div class="footer_flecha">
             <p>Contactanos Gratuitamente</p>
-            <img                                 th:src="@{/iconos/icon_arrow.png}"
-                                                 alt="Flecha" />
+            <img th:src="@{/grupo15/iconos/icon_arrow.png}" alt="Flecha" />
           </div>
         </div>
       </div>

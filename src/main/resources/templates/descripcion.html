@@ -21,12 +21,12 @@
           alt="Logo Documentacion"
         />
         <nav class="navegacion_enlaces">
-          <a th:href="@{/home}">Home</a>
-          <a th:href="@{/proyecto/descripcion}">Documentacion</a>
-          <a th:href="@{/contacto}">Contacto</a>
+          <a th:href="@{/grupo15/home}">Home</a>
+          <a th:href="@{/grupo15/proyecto/descripcion}">Documentacion</a>
+          <a th:href="@{/grupo15/contacto}">Contacto</a>
         </nav>
 
-        <a th:href="@{/contacto}" class="btn_primario">Contactanos</a>
+        <a th:href="@{/grupo15/contacto}" class="btn_primario">Contactanos</a>
       </div>
 
       <h1>Descripcion del Proyecto</h1>
@@ -41,7 +41,7 @@
               alt="Icon Home"
             />
             <div class="nav_main-busqueda">
-              <a th:href="@{/home}">Home</a>
+              <a th:href="@{/grupo15/home}">Home</a>
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@
                 <div class="dropdown__content">
                   <ul class="dropdown__sub">
                     <li class="dropdown__li">
-                      <a th:href="@{/proyecto/equipo}">
+                      <a th:href="@{/grupo15/proyecto/equipo}">
                         <img
                           th:src="@{/grupo15/iconos/icon_document.png}"
                           alt="Icon Document"
@@ -92,7 +92,7 @@
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/proyecto/descripcion}">
+                      <a th:href="@{/grupo15/proyecto/descripcion}">
                         <img
                           th:src="@{/grupo15/iconos/icon_document.png}"
                           alt="Icon Document"
@@ -128,7 +128,7 @@
                 <div class="dropdown__content">
                   <ul class="dropdown__sub">
                     <li class="dropdown__li">
-                      <a th:href="@{/requerimientos/funcionales}">
+                      <a th:href="@{/grupo15/requerimientos/funcionales}">
                         <img
                           th:src="@{/grupo15/iconos/icon_document.png}"
                           alt="Icon Document"
@@ -137,7 +137,7 @@
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/requerimientos/nofuncionales}">
+                      <a th:href="@{/grupo15/requerimientos/nofuncionales}">
                         <img
                           th:src="@{/grupo15/iconos/icon_document.png}"
                           alt="Icon Document"
@@ -173,7 +173,7 @@
                 <div class="dropdown__content">
                   <ul class="dropdown__sub">
                     <li class="dropdown__li">
-                      <a th:href="@{/arquitectura/diagramac4}">
+                      <a th:href="@{/grupo15/arquitectura/diagramac4}">
                         <img
                           th:src="@{/grupo15/iconos/icon_document.png}"
                           alt="Icon Document"
@@ -182,7 +182,7 @@
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/arquitectura/modelos}">
+                      <a th:href="@{/grupo15/arquitectura/modelos}">
                         <img
                           th:src="@{/grupo15/iconos/icon_document.png}"
                           alt="Icon Document"
@@ -191,7 +191,7 @@
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/arquitectura/despliegue}">
+                      <a th:href="@{/grupo15/arquitectura/despliegue}">
                         <img
                           th:src="@{/grupo15/iconos/icon_document.png}"
                           alt="Icon Document"
@@ -227,7 +227,7 @@
                 <div class="dropdown__content">
                   <ul class="dropdown__sub">
                     <li class="dropdown__li">
-                      <a th:href="@{/desarrollo/endpoints}">
+                      <a th:href="@{/grupo15/desarrollo/endpoints}">
                         <img
                           th:src="@{/grupo15/iconos/icon_document.png}"
                           alt="Icon Document"
@@ -236,7 +236,7 @@
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/desarrollo/pruebasfront}">
+                      <a th:href="@{/grupo15/desarrollo/pruebasfront}">
                         <img
                           th:src="@{/grupo15/iconos/icon_document.png}"
                           alt="Icon Document"
@@ -245,7 +245,7 @@
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/desarrollo/pruebasback}">
+                      <a th:href="@{/grupo15/desarrollo/pruebasback}">
                         <img
                           th:src="@{/grupo15/iconos/icon_document.png}"
                           alt="Icon Document"
@@ -254,7 +254,7 @@
                       </a>
                     </li>
                     <li class="dropdown__li">
-                      <a th:href="@{/desarrollo/versiones}">
+                      <a th:href="@{/grupo15/desarrollo/versiones}">
                         <img
                           th:src="@{/grupo15/iconos/icon_document.png}"
                           alt="Icon Document"
@@ -290,7 +290,7 @@
                 <div class="dropdown__content">
                   <ul class="dropdown__sub">
                     <li class="dropdown__li">
-                      <a th:href="@{/contacto}">
+                      <a th:href="@{/grupo15/contacto}">
                         <img
                           th:src="@{/grupo15/iconos/icon_document.png}"
                           alt="Icon Document"
@@ -414,21 +414,21 @@
     <footer class="bg-footer">
       <div class="grid_footer contenedor">
         <div>
-          <img th:src="@{/grupo15/images/logo-black.png}" alt="Logo" />
+          <img src="/grupo15/images/logo-black.png" alt="Logo" />
           <p>
-            Manage any project from start to finish with highly customizable
-            views that make project planning a breezed out formal.
+            Descubre Homez, un proyecto que permite innovar la forma en la que
+            eliges una propiedad
           </p>
         </div>
 
         <div>
           <h4>Links</h4>
           <nav>
-            <a th:href="@{/proyecto/descripcion}">Sobre el Proyecto</a>
-            <a th:href="@{/proyecto/descripcion}">Sobre la Arquitectura</a>
-            <a th:href="@{/proyecto/descripcion}">Sobre los Requerimientos</a>
-            <a th:href="@{/proyecto/descripcion}">Sobre el Desarrollo</a>
-            <a th:href="@{/contacto}">Contactanos</a>
+            <a th:href="@{/grupo15/componente/proyecto}">Sobre el Proyecto</a>
+            <a th:href="@{/grupo15/componente/arquitectura}">Sobre la Arquitectura</a>
+            <a th:href="@{/grupo15/componente/requerimientos}">Sobre los Requerimientos</a>
+            <a th:href="@{/grupo15/componente/desarrollo}">Sobre el Desarrollo</a>
+            <a th:href="@{/grupo15/contacto}">Contactanos</a>
           </nav>
         </div>
 

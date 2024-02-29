@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentacion - Proyecto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" th:href="@{/grupo15/css/styles.css}" />
+  </head>
+  <body>
+    <header class="bg-header">
+      <div class="contenedor navegacion">
+        <img
+          class="logo"
+          th:src="@{/grupo15/images/logo-black.png}"
+          alt="Logo Documentacion"
+        />
+        <nav class="navegacion_enlaces">
+          <a th:href="@{/grupo15/home}">Home</a>
+          <a th:href="@{/grupo15/proyecto/descripcion}">Documentacion</a>
+          <a th:href="@{/grupo15/contacto}">Contacto</a>
+        </nav>
+
+        <a th:href="@{/grupo15/contacto}" class="btn_primario">Contactanos</a>
+      </div>
+
+      <h1>Versiones</h1>
+    </header>
+    <main class="main">
+      <div class="nav_main contenedor">
+        <div class="nav_main-flex">
+          <div class="nav_main-enlaces">
+            <img
+              class="nav_icon"
+              th:src="@{/grupo15/iconos/icon_home.png}"
+              alt="Icon Home"
+            />
+            <div class="nav_main-busqueda">
+              <a th:href="@{/grupo15/home}">Home</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav_main-calendar">
+          <img
+            class="nav_icon"
+            th:src="@{/grupo15/iconos/icon_calendar.png}"
+            alt="Calendar Icon"
+          />
+          <p>Actualizado el 05/02/2024</p>
+        </div>
+      </div>
+
+      <div class="contenedor main_doc">
+        <aside class="nav_aside">
+          <h3>Temas Documento</h3>
+
+          <div class="nav_flex">
+            <ul class="dropdown">
+              <li class="dropdown__list">
+                <div class="dropdown__link">
+                  <div class="dropdown__flex">
+                    <img
+                      class="dropdown__icon"
+                      th:src="@{/grupo15/iconos/icon_project.png}"
+                      alt="Icon Dropdown"
+                    />
+                    <span>Proyecto</span>
+                  </div>
+                  <input type="checkbox" class="dropdown__check" />
+                  <img
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
+                  />
+                </div>
+
+                <div class="dropdown__content">
+                  <ul class="dropdown__sub">
+                    <li class="dropdown__li">
+                      <a th:href="@{/grupo15/proyecto/equipo}">
+                        <img
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
+                        />
+                        <span>El equipo</span>
+                      </a>
+                    </li>
+                    <li class="dropdown__li">
+                      <a th:href="@{/grupo15/proyecto/descripcion}">
+                        <img
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
+                        />
+                        <span>Descripción del proyecto</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="dropdown">
+              <li class="dropdown__list">
+                <div class="dropdown__link">
+                  <div class="dropdown__flex">
+                    <img
+                      class="dropdown__icon"
+                      th:src="@{/grupo15/iconos/icon_carpet.png}"
+                      alt="Icon Dropdown"
+                    />
+                    <span>Requerimientos</span>
+                  </div>
+
+                  <input type="checkbox" class="dropdown__check" />
+                  <img
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
+                  />
+                </div>
+
+                <div class="dropdown__content">
+                  <ul class="dropdown__sub">
+                    <li class="dropdown__li">
+                      <a th:href="@{/grupo15/requerimientos/funcionales}">
+                        <img
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
+                        />
+                        <span>Funcionales</span>
+                      </a>
+                    </li>
+                    <li class="dropdown__li">
+                      <a th:href="@{/grupo15/requerimientos/nofuncionales}">
+                        <img
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
+                        />
+                        <span>No Funcionales</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="dropdown">
+              <li class="dropdown__list">
+                <div class="dropdown__link">
+                  <div class="dropdown__flex">
+                    <img
+                      class="dropdown__icon"
+                      th:src="@{/grupo15/iconos/icon_arq.png}"
+                      alt="Icon Dropdown"
+                    />
+                    <span>Arquitectura</span>
+                  </div>
+
+                  <input type="checkbox" class="dropdown__check" />
+                  <img
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
+                  />
+                </div>
+
+                <div class="dropdown__content">
+                  <ul class="dropdown__sub">
+                    <li class="dropdown__li">
+                      <a th:href="@{/grupo15/arquitectura/diagramac4}">
+                        <img
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
+                        />
+                        <span>Diagramas de referencia C4</span>
+                      </a>
+                    </li>
+                    <li class="dropdown__li">
+                      <a th:href="@{/grupo15/arquitectura/modelos}">
+                        <img
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
+                        />
+                        <span>Modelos</span>
+                      </a>
+                    </li>
+                    <li class="dropdown__li">
+                      <a th:href="@{/grupo15/arquitectura/despliegue}">
+                        <img
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
+                        />
+                        <span>Diagrama de despliegue</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="dropdown">
+              <li class="dropdown__list">
+                <div class="dropdown__link">
+                  <div class="dropdown__flex">
+                    <img
+                      class="dropdown__icon"
+                      th:src="@{/grupo15/iconos/icon_arquitectura.png}"
+                      alt="Icon Dropdown"
+                    />
+                    <span>Desarrollo</span>
+                  </div>
+
+                  <input type="checkbox" class="dropdown__check" />
+                  <img
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
+                  />
+                </div>
+
+                <div class="dropdown__content">
+                  <ul class="dropdown__sub">
+                    <li class="dropdown__li">
+                      <a th:href="@{/grupo15/desarrollo/endpoints}">
+                        <img
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
+                        />
+                        <span>Descripciones de endpoints</span>
+                      </a>
+                    </li>
+                    <li class="dropdown__li">
+                      <a th:href="@{/grupo15/desarrollo/pruebasfront}">
+                        <img
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
+                        />
+                        <span>Casos de pruebas frontend</span>
+                      </a>
+                    </li>
+                    <li class="dropdown__li">
+                      <a th:href="@{/grupo15/desarrollo/pruebasback}">
+                        <img
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
+                        />
+                        <span>Casos de pruebas backend</span>
+                      </a>
+                    </li>
+                    <li class="dropdown__li">
+                      <a th:href="@{/grupo15/desarrollo/versiones}">
+                        <img
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
+                        />
+                        <span>Versiones</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="dropdown">
+              <li class="dropdown__list">
+                <div class="dropdown__link">
+                  <div class="dropdown__flex">
+                    <img
+                      class="dropdown__icon"
+                      th:src="@{/grupo15/iconos/icon_contacto.png}"
+                      alt="Icon Dropdown"
+                    />
+                    <span>Contacto</span>
+                  </div>
+
+                  <input type="checkbox" class="dropdown__check" />
+                  <img
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
+                  />
+                </div>
+
+                <div class="dropdown__content">
+                  <ul class="dropdown__sub">
+                    <li class="dropdown__li">
+                      <a th:href="@{/grupo15/contacto}">
+                        <img
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
+                        />
+                        <span>Contactanos</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <div class="main_content">
+          <h2>Versiones</h2>
+
+          <p>
+            En esta sección, se mantiene un registro detallado de las distintas
+            versiones del proyecto, con el objetivo de ofrecer una visión
+            histórica del desarrollo y de las mejoras implementadas en cada
+            iteración.
+          </p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Versión</th>
+                <th>Fecha de Lanzamiento</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1.0.0</td>
+                <td>2022-03-01</td>
+                <td>Primera versión del proyecto.</td>
+              </tr>
+              <tr>
+                <td>1.1.0</td>
+                <td>2022-04-15</td>
+                <td>Integración de nuevas características.</td>
+              </tr>
+              <tr>
+                <td>1.1.1</td>
+                <td>2022-05-20</td>
+                <td>Corrección de errores y mejoras de rendimiento.</td>
+              </tr>
+              <!-- Agrega más filas según sea necesario -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-footer">
+      <div class="grid_footer contenedor">
+        <div>
+          <img src="/grupo15/images/logo-black.png" alt="Logo" />
+          <p>
+            Descubre Homez, un proyecto que permite innovar la forma en la que
+            eliges una propiedad
+          </p>
+        </div>
+
+        <div>
+          <h4>Links</h4>
+          <nav>
+            <a th:href="@{/grupo15/componente/proyecto}">Sobre el Proyecto</a>
+            <a th:href="@{/grupo15/componente/arquitectura}"
+              >Sobre la Arquitectura</a
+            >
+            <a th:href="@{/grupo15/componente/requerimientos}"
+              >Sobre los Requerimientos</a
+            >
+            <a th:href="@{/grupo15/componente/desarrollo}"
+              >Sobre el Desarrollo</a
+            >
+            <a th:href="@{/grupo15/contacto}">Contactanos</a>
+          </nav>
+        </div>
+
+        <div>
+          <h4>Contacto Rapido</h4>
+          <div class="footer_contacto">
+            <input type="text" placeholder="Ingresa tu email" name="" id="" />
+          </div>
+          <div class="footer_flecha">
+            <p>Contactanos Gratuitamente</p>
+            <img th:src="@{/grupo15/iconos/icon_arrow.png}" alt="Flecha" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
