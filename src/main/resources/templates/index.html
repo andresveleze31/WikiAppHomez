@@ -10,14 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="grupo15/css/styles.css" />
+    <link rel="stylesheet" href="/grupo15/css/styles.css" />
   </head>
   <body>
     <header class="bg-header">
       <div class="contenedor navegacion">
         <img
           class="logo"
-          th:src="@{/images/logo-black.png}"
+          th:src="@{/grupo15/images/logo-black.png}"
           alt="Logo Documentacion"
         />
         <nav class="navegacion_enlaces">
@@ -37,7 +37,7 @@
           <div class="nav_main-enlaces">
             <img
               class="nav_icon"
-              th:src="@{/iconos/icon_home.png}"
+              th:src="@{/grupo15/iconos/icon_home.png}"
               alt="Icon Home"
             />
             <div class="nav_main-busqueda">
@@ -49,7 +49,7 @@
         <div class="nav_main-calendar">
           <img
             class="nav_icon"
-            th:src="@{/iconos/icon_calendar.png}"
+            th:src="@{/grupo15/iconos/icon_calendar.png}"
             alt="Calendar Icon"
           />
           <p>Actualizado el 05/02/2024</p>
@@ -67,14 +67,14 @@
                   <div class="dropdown__flex">
                     <img
                       class="dropdown__icon"
-                      th:src="@{/iconos/icon_project.png}"
+                      th:src="@{/grupo15/iconos/icon_project.png}"
                       alt="Icon Dropdown"
                     />
                     <span>Proyecto</span>
                   </div>
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                    th:src="@{/iconos/icon_dropdown.png}"
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
                     class="dropdown__arrow"
                     alt="Dropdown"
                   />
@@ -85,7 +85,7 @@
                     <li class="dropdown__li">
                       <a th:href="@{/grupo15/proyecto/equipo}">
                         <img
-                          th:src="@{/iconos/icon_document.png}"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
                           alt="Icon Document"
                         />
                         <span>El equipo</span>
@@ -94,7 +94,7 @@
                     <li class="dropdown__li">
                       <a th:href="@{/grupo15/proyecto/descripcion}">
                         <img
-                          th:src="@{/iconos/icon_document.png}"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
                           alt="Icon Document"
                         />
                         <span>Descripción del proyecto</span>
@@ -111,7 +111,7 @@
                   <div class="dropdown__flex">
                     <img
                       class="dropdown__icon"
-                      th:src="@{/iconos/icon_carpet.png}"
+                      th:src="@{/grupo15/iconos/icon_carpet.png}"
                       alt="Icon Dropdown"
                     />
                     <span>Requerimientos</span>
@@ -119,7 +119,7 @@
 
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                    th:src="@{/iconos/icon_dropdown.png}"
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
                     class="dropdown__arrow"
                     alt="Dropdown"
                   />
@@ -130,7 +130,7 @@
                     <li class="dropdown__li">
                       <a th:href="@{/grupo15/requerimientos/funcionales}">
                         <img
-                          th:src="@{/iconos/icon_document.png}"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
                           alt="Icon Document"
                         />
                         <span>Funcionales</span>
@@ -139,7 +139,7 @@
                     <li class="dropdown__li">
                       <a th:href="@{/grupo15/requerimientos/nofuncionales}">
                         <img
-                          th:src="@{/iconos/icon_document.png}"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
                           alt="Icon Document"
                         />
                         <span>No Funcionales</span>
@@ -156,7 +156,7 @@
                   <div class="dropdown__flex">
                     <img
                       class="dropdown__icon"
-                      th:src="@{/iconos/icon_arq.png}"
+                      th:src="@{/grupo15/iconos/icon_arq.png}"
                       alt="Icon Dropdown"
                     />
                     <span>Arquitectura</span>
@@ -164,7 +164,7 @@
 
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                    th:src="@{/iconos/icon_dropdown.png}"
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
                     class="dropdown__arrow"
                     alt="Dropdown"
                   />
@@ -175,7 +175,7 @@
                     <li class="dropdown__li">
                       <a th:href="@{/grupo15/arquitectura/diagramac4}">
                         <img
-                          th:src="@{/iconos/icon_document.png}"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
                           alt="Icon Document"
                         />
                         <span>Diagramas de referencia C4</span>
@@ -184,7 +184,7 @@
                     <li class="dropdown__li">
                       <a th:href="@{/grupo15/arquitectura/modelos}">
                         <img
-                          th:src="@{/iconos/icon_document.png}"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
                           alt="Icon Document"
                         />
                         <span>Modelos</span>
@@ -193,7 +193,7 @@
                     <li class="dropdown__li">
                       <a th:href="@{/grupo15/arquitectura/despliegue}">
                         <img
-                          th:src="@{/iconos/icon_document.png}"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
                           alt="Icon Document"
                         />
                         <span>Diagrama de despliegue</span>
@@ -210,7 +210,7 @@
                   <div class="dropdown__flex">
                     <img
                       class="dropdown__icon"
-                      th:src="@{/iconos/icon_arquitectura.png}"
+                      th:src="@{/grupo15/iconos/icon_arquitectura.png}"
                       alt="Icon Dropdown"
                     />
                     <span>Desarrollo</span>
@@ -218,7 +218,7 @@
 
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                    th:src="@{/iconos/icon_dropdown.png}"
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
                     class="dropdown__arrow"
                     alt="Dropdown"
                   />
@@ -229,7 +229,7 @@
                     <li class="dropdown__li">
                       <a th:href="@{/grupo15/desarrollo/endpoints}">
                         <img
-                          th:src="@{/iconos/icon_document.png}"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
                           alt="Icon Document"
                         />
                         <span>Descripciones de endpoints</span>
@@ -238,7 +238,7 @@
                     <li class="dropdown__li">
                       <a th:href="@{/grupo15/desarrollo/pruebasfront}">
                         <img
-                          th:src="@{/iconos/icon_document.png}"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
                           alt="Icon Document"
                         />
                         <span>Casos de pruebas frontend</span>
@@ -247,7 +247,7 @@
                     <li class="dropdown__li">
                       <a th:href="@{/grupo15/desarrollo/pruebasback}">
                         <img
-                          th:src="@{/iconos/icon_document.png}"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
                           alt="Icon Document"
                         />
                         <span>Casos de pruebas backend</span>
@@ -256,7 +256,7 @@
                     <li class="dropdown__li">
                       <a th:href="@{/grupo15/desarrollo/versiones}">
                         <img
-                          th:src="@{/iconos/icon_document.png}"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
                           alt="Icon Document"
                         />
                         <span>Versiones</span>
@@ -273,7 +273,7 @@
                   <div class="dropdown__flex">
                     <img
                       class="dropdown__icon"
-                      th:src="@{/iconos/icon_contacto.png}"
+                      th:src="@{/grupo15/iconos/icon_contacto.png}"
                       alt="Icon Dropdown"
                     />
                     <span>Contacto</span>
@@ -281,7 +281,7 @@
 
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                    th:src="@{/iconos/icon_dropdown.png}"
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
                     class="dropdown__arrow"
                     alt="Dropdown"
                   />
@@ -292,7 +292,7 @@
                     <li class="dropdown__li">
                       <a th:href="@{/grupo15/contacto}">
                         <img
-                          th:src="@{/iconos/icon_document.png}"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
                           alt="Icon Document"
                         />
                         <span>Contactanos</span>
@@ -326,7 +326,7 @@
             <div class="home_component">
               <div class="home_round">
                 <img
-                  th:src="@{/iconos/icon_project_big.png}"
+                  th:src="@{/grupo15/iconos/icon_project_big.png}"
                   alt="Icon Carpeta"
                 />
               </div>
@@ -338,7 +338,7 @@
             <div class="home_component">
               <div class="home_round">
                 <img
-                  th:src="@{/iconos/icon_carpet_big.png}"
+                  th:src="@{/grupo15/iconos/icon_carpet_big.png}"
                   alt="Icon Carpeta"
                 />
               </div>
@@ -353,7 +353,7 @@
             <div class="home_component">
               <div class="home_round">
                 <img
-                  th:src="@{/iconos/icon_arquitectura_big.png}"
+                  th:src="@{/grupo15/iconos/icon_arquitectura_big.png}"
                   alt="Icon Carpeta"
                 />
               </div>
@@ -365,7 +365,7 @@
             <div class="home_component">
               <div class="home_round">
                 <img
-                  th:src="@{/iconos/icon_desarrollo_big.png}"
+                  th:src="@{/grupo15/iconos/icon_desarrollo_big.png}"
                   alt="Icon Carpeta"
                 />
               </div>
@@ -380,7 +380,7 @@
             <div class="home_component">
               <div class="home_round">
                 <img
-                  th:src="@{/iconos/icon_contacto_big.png}"
+                  th:src="@{/grupo15/iconos/icon_contacto_big.png}"
                   alt="Icon Carpeta"
                 />
               </div>
@@ -397,10 +397,7 @@
     <footer class="bg-footer">
       <div class="grid_footer contenedor">
         <div>
-          <img
-            src="../../../../../Spring/Documy/Documentacion%20Proyecto/public/img/logo-black.png"
-            alt="Logo"
-          />
+          <img src="/grupo15/images/logo-black.png" alt="Logo" />
           <p>
             Manage any project from start to finish with highly customizable
             views that make project planning a breezed out formal.
@@ -425,7 +422,7 @@
           </div>
           <div class="footer_flecha">
             <p>Contactanos Gratuitamente</p>
-            <img th:src="@{/iconos/icon_arrow.png}" alt="Flecha" />
+            <img th:src="@{/grupo15/iconos/icon_arrow.png}" alt="Flecha" />
           </div>
         </div>
       </div>
