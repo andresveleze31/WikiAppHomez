@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Documentacion - Proyecto</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-          rel="stylesheet"
-  />
-  <link rel="stylesheet" th:href="@{/grupo15/css/styles.css}" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentacion - Proyecto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" th:href="@{/grupo15/css/styles.css}" />
   </head>
   <body>
     <header class="bg-header">
       <div class="contenedor navegacion">
         <img
-                class="logo"
-                th:src="@{/grupo15/images/logo-black.png}"
-                alt="Logo Documentacion"
+          class="logo"
+          th:src="@{/grupo15/images/logo-black.png}"
+          alt="Logo Documentacion"
         />
         <nav class="navegacion_enlaces">
           <a th:href="@{/grupo15/home}">Home</a>
@@ -36,9 +36,9 @@
         <div class="nav_main-flex">
           <div class="nav_main-enlaces">
             <img
-                    class="nav_icon"
-                    th:src="@{/grupo15/iconos/icon_home.png}"
-                    alt="Icon Home"
+              class="nav_icon"
+              th:src="@{/grupo15/iconos/icon_home.png}"
+              alt="Icon Home"
             />
             <div class="nav_main-busqueda">
               <a th:href="@{/grupo15/home}">Home</a>
@@ -48,9 +48,9 @@
 
         <div class="nav_main-calendar">
           <img
-                  class="nav_icon"
-                  th:src="@{/grupo15/iconos/icon_calendar.png}"
-                  alt="Calendar Icon"
+            class="nav_icon"
+            th:src="@{/grupo15/iconos/icon_calendar.png}"
+            alt="Calendar Icon"
           />
           <p>Actualizado el 05/02/2024</p>
         </div>
@@ -66,17 +66,17 @@
                 <div class="dropdown__link">
                   <div class="dropdown__flex">
                     <img
-                            class="dropdown__icon"
-                            th:src="@{/grupo15/iconos/icon_project.png}"
-                            alt="Icon Dropdown"
+                      class="dropdown__icon"
+                      th:src="@{/grupo15/iconos/icon_project.png}"
+                      alt="Icon Dropdown"
                     />
                     <span>Proyecto</span>
                   </div>
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                          th:src="@{/grupo15/iconos/icon_dropdown.png}"
-                          class="dropdown__arrow"
-                          alt="Dropdown"
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
                   />
                 </div>
 
@@ -85,8 +85,8 @@
                     <li class="dropdown__li">
                       <a th:href="@{/grupo15/proyecto/equipo}">
                         <img
-                                th:src="@{/grupo15/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>El equipo</span>
                       </a>
@@ -94,8 +94,8 @@
                     <li class="dropdown__li">
                       <a th:href="@{/grupo15/proyecto/descripcion}">
                         <img
-                                th:src="@{/grupo15/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Descripción del proyecto</span>
                       </a>
@@ -110,18 +110,18 @@
                 <div class="dropdown__link">
                   <div class="dropdown__flex">
                     <img
-                            class="dropdown__icon"
-                            th:src="@{/grupo15/iconos/icon_carpet.png}"
-                            alt="Icon Dropdown"
+                      class="dropdown__icon"
+                      th:src="@{/grupo15/iconos/icon_carpet.png}"
+                      alt="Icon Dropdown"
                     />
                     <span>Requerimientos</span>
                   </div>
 
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                          th:src="@{/grupo15/iconos/icon_dropdown.png}"
-                          class="dropdown__arrow"
-                          alt="Dropdown"
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
                   />
                 </div>
 
@@ -130,8 +130,8 @@
                     <li class="dropdown__li">
                       <a th:href="@{/grupo15/requerimientos/funcionales}">
                         <img
-                                th:src="@{/grupo15/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Funcionales</span>
                       </a>
@@ -139,8 +139,8 @@
                     <li class="dropdown__li">
                       <a th:href="@{/grupo15/requerimientos/nofuncionales}">
                         <img
-                                th:src="@{/grupo15/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>No Funcionales</span>
                       </a>
@@ -155,18 +155,18 @@
                 <div class="dropdown__link">
                   <div class="dropdown__flex">
                     <img
-                            class="dropdown__icon"
-                            th:src="@{/grupo15/iconos/icon_arq.png}"
-                            alt="Icon Dropdown"
+                      class="dropdown__icon"
+                      th:src="@{/grupo15/iconos/icon_arq.png}"
+                      alt="Icon Dropdown"
                     />
                     <span>Arquitectura</span>
                   </div>
 
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                          th:src="@{/grupo15/iconos/icon_dropdown.png}"
-                          class="dropdown__arrow"
-                          alt="Dropdown"
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
                   />
                 </div>
 
@@ -175,8 +175,8 @@
                     <li class="dropdown__li">
                       <a th:href="@{/grupo15/arquitectura/diagramac4}">
                         <img
-                                th:src="@{/grupo15/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Diagramas de referencia C4</span>
                       </a>
@@ -184,8 +184,8 @@
                     <li class="dropdown__li">
                       <a th:href="@{/grupo15/arquitectura/modelos}">
                         <img
-                                th:src="@{/grupo15/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Modelos</span>
                       </a>
@@ -193,8 +193,8 @@
                     <li class="dropdown__li">
                       <a th:href="@{/grupo15/arquitectura/despliegue}">
                         <img
-                                th:src="@{/grupo15/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Diagrama de despliegue</span>
                       </a>
@@ -206,21 +206,21 @@
 
             <ul class="dropdown">
               <li class="dropdown__list">
-                <div class="dropdown__link" >
+                <div class="dropdown__link">
                   <div class="dropdown__flex">
                     <img
-                            class="dropdown__icon"
-                            th:src="@{/grupo15/iconos/icon_arquitectura.png}"
-                            alt="Icon Dropdown"
+                      class="dropdown__icon"
+                      th:src="@{/grupo15/iconos/icon_arquitectura.png}"
+                      alt="Icon Dropdown"
                     />
                     <span>Desarrollo</span>
                   </div>
 
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                          th:src="@{/grupo15/iconos/icon_dropdown.png}"
-                          class="dropdown__arrow"
-                          alt="Dropdown"
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
                   />
                 </div>
 
@@ -229,8 +229,8 @@
                     <li class="dropdown__li">
                       <a th:href="@{/grupo15/desarrollo/endpoints}">
                         <img
-                                th:src="@{/grupo15/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Descripciones de endpoints</span>
                       </a>
@@ -238,8 +238,8 @@
                     <li class="dropdown__li">
                       <a th:href="@{/grupo15/desarrollo/pruebasfront}">
                         <img
-                                th:src="@{/grupo15/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Casos de pruebas frontend</span>
                       </a>
@@ -247,8 +247,8 @@
                     <li class="dropdown__li">
                       <a th:href="@{/grupo15/desarrollo/pruebasback}">
                         <img
-                                th:src="@{/grupo15/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Casos de pruebas backend</span>
                       </a>
@@ -256,8 +256,8 @@
                     <li class="dropdown__li">
                       <a th:href="@{/grupo15/desarrollo/versiones}">
                         <img
-                                th:src="@{/grupo15/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Versiones</span>
                       </a>
@@ -269,21 +269,21 @@
 
             <ul class="dropdown">
               <li class="dropdown__list">
-                <div class="dropdown__link" >
+                <div class="dropdown__link">
                   <div class="dropdown__flex">
                     <img
-                            class="dropdown__icon"
-                            th:src="@{/grupo15/iconos/icon_contacto.png}"
-                            alt="Icon Dropdown"
+                      class="dropdown__icon"
+                      th:src="@{/grupo15/iconos/icon_contacto.png}"
+                      alt="Icon Dropdown"
                     />
                     <span>Contacto</span>
                   </div>
 
                   <input type="checkbox" class="dropdown__check" />
                   <img
-                          th:src="@{/grupo15/iconos/icon_dropdown.png}"
-                          class="dropdown__arrow"
-                          alt="Dropdown"
+                    th:src="@{/grupo15/iconos/icon_dropdown.png}"
+                    class="dropdown__arrow"
+                    alt="Dropdown"
                   />
                 </div>
 
@@ -292,8 +292,8 @@
                     <li class="dropdown__li">
                       <a th:href="@{/grupo15/contacto}">
                         <img
-                                th:src="@{/grupo15/iconos/icon_document.png}"
-                                alt="Icon Document"
+                          th:src="@{/grupo15/iconos/icon_document.png}"
+                          alt="Icon Document"
                         />
                         <span>Contactanos</span>
                       </a>
@@ -309,17 +309,458 @@
           <h2>Modelos</h2>
 
           <p>
-            Los siguientes modelos desempeñan un papel fundamental al proporcionar representaciones visuales y conceptuales que facilitan la comprensión, diseño y comunicación de aspectos clave del sistema. A continuación, se describen los propósitos comunes de algunos modelos:
+            Los siguientes modelos desempeñan un papel fundamental al
+            proporcionar representaciones visuales y conceptuales que facilitan
+            la comprensión, diseño y comunicación de aspectos clave del sistema.
+            A continuación, se describen los propósitos comunes de algunos
+            modelos:
           </p>
 
           <div class="seccion_diagrama">
             <h4>Diagrama de Entidad/Relacion</h4>
             <p class="diagramas_parrafo">
-              El Diagrama de Entidad/Relación (DER) es una representación visual que ilustra las entidades dentro de un sistema y las relaciones entre ellas. Este modelo ofrece una visión clara de la estructura de la base de datos, identificando entidades como objetos clave y las conexiones entre ellas. En el contexto de la arquitectura de datos, el DER proporciona un marco comprensible para diseñar y entender la relación entre diversos elementos, facilitando la conceptualización y el diseño eficiente de la base de datos. Este diagrama es esencial para los desarrolladores y diseñadores de bases de datos, permitiéndoles visualizar de manera intuitiva cómo se organizan y relacionan las entidades en el sistema.
+              El Diagrama de Entidad/Relación (DER) es una representación visual
+              que ilustra las entidades dentro de un sistema y las relaciones
+              entre ellas. Este modelo ofrece una visión clara de la estructura
+              de la base de datos, identificando entidades como objetos clave y
+              las conexiones entre ellas. En el contexto de la arquitectura de
+              datos, el DER proporciona un marco comprensible para diseñar y
+              entender la relación entre diversos elementos, facilitando la
+              conceptualización y el diseño eficiente de la base de datos. Este
+              diagrama es esencial para los desarrolladores y diseñadores de
+              bases de datos, permitiéndoles visualizar de manera intuitiva cómo
+              se organizan y relacionan las entidades en el sistema.
             </p>
 
-            <img src="/grupo15/images/modeloconceptual.png" alt="" />
+            <img src="/grupo15/images/modelohomez.png" alt="" />
           </div>
+
+          <h2>Propiedad</h2>
+          <table border="1">
+            <tr>
+              <th>Atributo</th>
+              <th>Descripción</th>
+            </tr>
+            <tr>
+              <td>id</td>
+              <td>Identificador único de la propiedad (clave primaria)</td>
+            </tr>
+            <tr>
+              <td>activa</td>
+              <td>Indica si la propiedad está activa (booleano)</td>
+            </tr>
+            <tr>
+              <td>nombre</td>
+              <td>Nombre de la propiedad</td>
+            </tr>
+            <tr>
+              <td>departamento</td>
+              <td>
+                Identificador del departamento al que pertenece la propiedad
+                (clave foránea)
+              </td>
+            </tr>
+            <tr>
+              <td>municipio</td>
+              <td>
+                Identificador del municipio al que pertenece la propiedad (clave
+                foránea)
+              </td>
+            </tr>
+            <tr>
+              <td>tipoingreso</td>
+              <td>
+                Identificador del tipo de ingreso de la propiedad (clave
+                foránea)
+              </td>
+            </tr>
+            <tr>
+              <td>arrendador_id</td>
+              <td>
+                Identificador del arrendador de la propiedad (clave foránea)
+              </td>
+            </tr>
+            <tr>
+              <td>descripcion</td>
+              <td>Descripción de la propiedad</td>
+            </tr>
+            <tr>
+              <td>personas</td>
+              <td>Número de personas que pueden habitar la propiedad</td>
+            </tr>
+            <tr>
+              <td>habitaciones</td>
+              <td>Número de habitaciones de la propiedad</td>
+            </tr>
+            <tr>
+              <td>baños</td>
+              <td>Número de baños de la propiedad</td>
+            </tr>
+            <tr>
+              <td>mascotas</td>
+              <td>Indica si se permiten mascotas en la propiedad (booleano)</td>
+            </tr>
+            <tr>
+              <td>piscina</td>
+              <td>Indica si la propiedad cuenta con piscina (booleano)</td>
+            </tr>
+            <tr>
+              <td>asador</td>
+              <td>Indica si la propiedad cuenta con asador (booleano)</td>
+            </tr>
+            <tr>
+              <td>valor</td>
+              <td>Valor de la propiedad</td>
+            </tr>
+            <tr>
+              <td>calificacion</td>
+              <td>Calificación de la propiedad</td>
+            </tr>
+            <tr>
+              <td>tipo_id</td>
+              <td>Identificador del tipo de propiedad (clave foránea)</td>
+            </tr>
+          </table>
+
+          <h2>Tipo</h2>
+          <table border="1">
+            <tr>
+              <th>Atributo</th>
+              <th>Descripción</th>
+            </tr>
+            <tr>
+              <td>id</td>
+              <td>Identificador único del tipo (clave primaria)</td>
+            </tr>
+            <tr>
+              <td>img</td>
+              <td>URL de la imagen asociada al tipo</td>
+            </tr>
+            <tr>
+              <td>tipo</td>
+              <td>Nombre del tipo</td>
+            </tr>
+          </table>
+
+          <h2>Departamento</h2>
+          <table border="1">
+            <tr>
+              <th>Atributo</th>
+              <th>Descripción</th>
+            </tr>
+            <tr>
+              <td>id</td>
+              <td>Identificador único del departamento (clave primaria)</td>
+            </tr>
+            <tr>
+              <td>img</td>
+              <td>URL de la imagen asociada al departamento</td>
+            </tr>
+            <tr>
+              <td>departamento</td>
+              <td>Nombre del departamento</td>
+            </tr>
+          </table>
+
+          <h2>Tipoingreso</h2>
+          <table border="1">
+            <tr>
+              <th>Atributo</th>
+              <th>Descripción</th>
+            </tr>
+            <tr>
+              <td>id</td>
+              <td>Identificador único del tipo de ingreso (clave primaria)</td>
+            </tr>
+            <tr>
+              <td>tipoingreso</td>
+              <td>Tipo de ingreso</td>
+            </tr>
+          </table>
+
+          <h2>Municipio</h2>
+          <table border="1">
+            <tr>
+              <th>Atributo</th>
+              <th>Descripción</th>
+            </tr>
+            <tr>
+              <td>id</td>
+              <td>Identificador único del municipio (clave primaria)</td>
+            </tr>
+            <tr>
+              <td>municipio</td>
+              <td>Nombre del municipio</td>
+            </tr>
+          </table>
+
+          <h2>Arrendador</h2>
+          <table border="1">
+            <tr>
+              <th>Atributo</th>
+              <th>Descripción</th>
+            </tr>
+            <tr>
+              <td>id</td>
+              <td>Identificador único del arrendador (clave primaria)</td>
+            </tr>
+            <tr>
+              <td>nombre</td>
+              <td>Nombre del arrendador</td>
+            </tr>
+            <tr>
+              <td>apellido</td>
+              <td>Apellido del arrendador</td>
+            </tr>
+            <tr>
+              <td>correo</td>
+              <td>Correo electrónico del arrendador</td>
+            </tr>
+            <tr>
+              <td>telefono</td>
+              <td>Número de teléfono del arrendador</td>
+            </tr>
+            <tr>
+              <td>contraseña</td>
+              <td>Contraseña del arrendador</td>
+            </tr>
+            <tr>
+              <td>created_at</td>
+              <td>Fecha y hora de creación del registro</td>
+            </tr>
+          </table>
+
+          <h2>Arrendatario</h2>
+          <table border="1">
+            <tr>
+              <th>Atributo</th>
+              <th>Descripción</th>
+            </tr>
+            <tr>
+              <td>id</td>
+              <td>Identificador único del arrendatario (clave primaria)</td>
+            </tr>
+            <tr>
+              <td>nombre</td>
+              <td>Nombre del arrendatario</td>
+            </tr>
+            <tr>
+              <td>apellido</td>
+              <td>Apellido del arrendatario</td>
+            </tr>
+            <tr>
+              <td>correo</td>
+              <td>Correo electrónico del arrendatario</td>
+            </tr>
+            <tr>
+              <td>telefono</td>
+              <td>Número de teléfono del arrendatario</td>
+            </tr>
+            <tr>
+              <td>contraseña</td>
+              <td>Contraseña del arrendatario</td>
+            </tr>
+            <tr>
+              <td>created_at</td>
+              <td>Fecha y hora de creación del registro</td>
+            </tr>
+          </table>
+
+          <h2>Solicitud</h2>
+          <table border="1">
+            <tr>
+              <th>Atributo</th>
+              <th>Descripción</th>
+            </tr>
+            <tr>
+              <td>id</td>
+              <td>Identificador único de la solicitud (clave primaria)</td>
+            </tr>
+            <tr>
+              <td>arrendatario_id</td>
+              <td>
+                Identificador del arrendatario asociado a la solicitud (clave
+                foránea)
+              </td>
+            </tr>
+            <tr>
+              <td>propiedad_id</td>
+              <td>
+                Identificador de la propiedad asociada a la solicitud (clave
+                foránea)
+              </td>
+            </tr>
+            <tr>
+              <td>fecha_inicio</td>
+              <td>Fecha de inicio de la solicitud</td>
+            </tr>
+            <tr>
+              <td>fecha_fin</td>
+              <td>Fecha de fin de la solicitud</td>
+            </tr>
+            <tr>
+              <td>personas</td>
+              <td>Número de personas que estarán en la propiedad</td>
+            </tr>
+            <tr>
+              <td>valor</td>
+              <td>Valor de la solicitud</td>
+            </tr>
+            <tr>
+              <td>estado</td>
+              <td>Estado de la solicitud (clave foránea)</td>
+            </tr>
+            <tr>
+              <td>created_at</td>
+              <td>Fecha y hora de creación del registro</td>
+            </tr>
+            <tr>
+              <td>calificacion_arrendatario_id</td>
+              <td>
+                Identificador de la calificación del arrendatario (clave
+                foránea)
+              </td>
+            </tr>
+            <tr>
+              <td>calificacion_propiedad_id</td>
+              <td>
+                Identificador de la calificación de la propiedad (clave foránea)
+              </td>
+            </tr>
+            <tr>
+              <td>pago_id</td>
+              <td>
+                Identificador del pago asociado a la solicitud (clave foránea)
+              </td>
+            </tr>
+          </table>
+          <h2>Estado</h2>
+          <table border="1">
+            <tr>
+              <th>Atributo</th>
+              <th>Descripción</th>
+            </tr>
+            <tr>
+              <td>id</td>
+              <td>Identificador único del estado (clave primaria)</td>
+            </tr>
+            <tr>
+              <td>estado</td>
+              <td>Nombre del estado</td>
+            </tr>
+          </table>
+
+          <h2>Foto</h2>
+          <table border="1">
+            <tr>
+              <th>Atributo</th>
+              <th>Descripción</th>
+            </tr>
+            <tr>
+              <td>id</td>
+              <td>Identificador único de la foto (clave primaria)</td>
+            </tr>
+            <tr>
+              <td>foto</td>
+              <td>URL de la foto asociada</td>
+            </tr>
+            <tr>
+              <td>propiedad_id</td>
+              <td>
+                Identificador de la propiedad asociada a la foto (clave foránea)
+              </td>
+            </tr>
+          </table>
+
+          <h2>Calificacionarrendatario</h2>
+          <table border="1">
+            <tr>
+              <th>Atributo</th>
+              <th>Descripción</th>
+            </tr>
+            <tr>
+              <td>id</td>
+              <td>
+                Identificador único de la calificación del arrendatario (clave
+                primaria)
+              </td>
+            </tr>
+            <tr>
+              <td>calificacion</td>
+              <td>Calificación otorgada al arrendatario</td>
+            </tr>
+            <tr>
+              <td>comentario</td>
+              <td>Comentario asociado a la calificación</td>
+            </tr>
+          </table>
+
+          <h2>Calificacionpropiedad</h2>
+          <table border="1">
+            <tr>
+              <th>Atributo</th>
+              <th>Descripción</th>
+            </tr>
+            <tr>
+              <td>id</td>
+              <td>
+                Identificador único de la calificación de la propiedad (clave
+                primaria)
+              </td>
+            </tr>
+            <tr>
+              <td>calificacion</td>
+              <td>Calificación otorgada a la propiedad</td>
+            </tr>
+            <tr>
+              <td>comentario</td>
+              <td>Comentario asociado a la calificación</td>
+            </tr>
+          </table>
+
+          <h2>Pagoarriendo</h2>
+          <table border="1">
+            <tr>
+              <th>Atributo</th>
+              <th>Descripción</th>
+            </tr>
+            <tr>
+              <td>id</td>
+              <td>Identificador único del pago de arriendo (clave primaria)</td>
+            </tr>
+            <tr>
+              <td>valor</td>
+              <td>Valor del pago de arriendo</td>
+            </tr>
+            <tr>
+              <td>numerocuenta</td>
+              <td>Número de cuenta asociado al pago</td>
+            </tr>
+            <tr>
+              <td>banco</td>
+              <td>Identificador del banco asociado al pago (clave foránea)</td>
+            </tr>
+          </table>
+
+          <h2>Banco</h2>
+          <table border="1">
+            <tr>
+              <th>Atributo</th>
+              <th>Descripción</th>
+            </tr>
+            <tr>
+              <td>id</td>
+              <td>Identificador único del banco (clave primaria)</td>
+            </tr>
+            <tr>
+              <td>banco</td>
+              <td>Nombre del banco</td>
+            </tr>
+          </table>
+
+          <!-- Se repite el mismo formato para las demás tablas -->
+
+          <!-- Se repite el mismo formato para las demás tablas -->
         </div>
       </div>
     </main>
@@ -338,9 +779,15 @@
           <h4>Links</h4>
           <nav>
             <a th:href="@{/grupo15/componente/proyecto}">Sobre el Proyecto</a>
-            <a th:href="@{/grupo15/componente/arquitectura}">Sobre la Arquitectura</a>
-            <a th:href="@{/grupo15/componente/requerimientos}">Sobre los Requerimientos</a>
-            <a th:href="@{/grupo15/componente/desarrollo}">Sobre el Desarrollo</a>
+            <a th:href="@{/grupo15/componente/arquitectura}"
+              >Sobre la Arquitectura</a
+            >
+            <a th:href="@{/grupo15/componente/requerimientos}"
+              >Sobre los Requerimientos</a
+            >
+            <a th:href="@{/grupo15/componente/desarrollo}"
+              >Sobre el Desarrollo</a
+            >
             <a th:href="@{/grupo15/contacto}">Contactanos</a>
           </nav>
         </div>

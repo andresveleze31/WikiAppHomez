@@ -315,6 +315,7 @@
             persona que interactúe con la interfaz del sistema.
           </p>
 
+          <h3>Propiedad</h3>
           <table>
             <thead>
               <tr>
@@ -326,27 +327,539 @@
             <tbody>
               <tr>
                 <td>GET</td>
-                <td>/api/users</td>
-                <td>Obtiene la lista de usuarios registrados.</td>
-              </tr>
-              <tr>
-                <td>POST</td>
-                <td>/api/users</td>
-                <td>Crea un nuevo usuario en la base de datos.</td>
+                <td>/api/homez/propiedad</td>
+                <td>Obtiene la lista de propiedades registradas.</td>
               </tr>
               <tr>
                 <td>GET</td>
-                <td>/api/posts</td>
-                <td>Recupera todas las publicaciones disponibles.</td>
+                <td>/api/homez/propiedad/{id}</td>
+                <td>Obtiene una propiedad específica.</td>
               </tr>
               <tr>
                 <td>POST</td>
-                <td>/api/posts</td>
-                <td>Publica un nuevo contenido en la plataforma.</td>
+                <td>/api/homez/propiedad</td>
+                <td>Crea una nueva propiedad.</td>
               </tr>
-              <!-- Agrega más filas según sea necesario -->
+              <tr>
+                <td>PUT</td>
+                <td>/api/homez/propiedad</td>
+                <td>Actualiza una propiedad existente.</td>
+              </tr>
+              <tr>
+                <td>DELETE</td>
+                <td>/api/homez/propiedad/{id}</td>
+                <td>Borra una propiedad específica.</td>
+              </tr>
             </tbody>
           </table>
+
+          <h3>Tipo</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Método</th>
+                <th>Ruta del Endpoint</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/tipo</td>
+                <td>Obtiene la lista de tipos registrados.</td>
+              </tr>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/tipo/{id}</td>
+                <td>Obtiene un tipo específico.</td>
+              </tr>
+              <tr>
+                <td>POST</td>
+                <td>/api/homez/tipo</td>
+                <td>Crea un nuevo tipo.</td>
+              </tr>
+              <tr>
+                <td>PUT</td>
+                <td>/api/homez/tipo</td>
+                <td>Actualiza un tipo existente.</td>
+              </tr>
+              <tr>
+                <td>DELETE</td>
+                <td>/api/homez/tipo/{id}</td>
+                <td>Borra un tipo específico.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Departamento</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Método</th>
+                <th>Ruta del Endpoint</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/departamento</td>
+                <td>Obtiene la lista de departamentos registrados.</td>
+              </tr>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/departamento/{id}</td>
+                <td>Obtiene un departamento específico.</td>
+              </tr>
+              <tr>
+                <td>POST</td>
+                <td>/api/homez/departamento</td>
+                <td>Crea un nuevo departamento.</td>
+              </tr>
+              <tr>
+                <td>PUT</td>
+                <td>/api/homez/departamento</td>
+                <td>Actualiza un departamento existente.</td>
+              </tr>
+              <tr>
+                <td>DELETE</td>
+                <td>/api/homez/departamento/{id}</td>
+                <td>Borra un departamento específico.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Tipoingreso</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Método</th>
+                <th>Ruta del Endpoint</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/tipoingreso</td>
+                <td>Obtiene la lista de tipos de ingreso registrados.</td>
+              </tr>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/tipoingreso/{id}</td>
+                <td>Obtiene un tipo de ingreso específico.</td>
+              </tr>
+              <tr>
+                <td>POST</td>
+                <td>/api/homez/tipoingreso</td>
+                <td>Crea un nuevo tipo de ingreso.</td>
+              </tr>
+              <tr>
+                <td>PUT</td>
+                <td>/api/homez/tipoingreso</td>
+                <td>Actualiza un tipo de ingreso existente.</td>
+              </tr>
+              <tr>
+                <td>DELETE</td>
+                <td>/api/homez/tipoingreso/{id}</td>
+                <td>Borra un tipo de ingreso específico.</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Municipio</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Método</th>
+                <th>Ruta del Endpoint</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/municipio</td>
+                <td>Obtiene la lista de municipios registrados.</td>
+              </tr>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/municipio/{id}</td>
+                <td>Obtiene un municipio específico.</td>
+              </tr>
+              <tr>
+                <td>POST</td>
+                <td>/api/homez/municipio</td>
+                <td>Crea un nuevo municipio.</td>
+              </tr>
+              <tr>
+                <td>PUT</td>
+                <td>/api/homez/municipio</td>
+                <td>Actualiza un municipio existente.</td>
+              </tr>
+              <tr>
+                <td>DELETE</td>
+                <td>/api/homez/municipio/{id}</td>
+                <td>Borra un municipio específico.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Arrendador</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Método</th>
+                <th>Ruta del Endpoint</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/arrendador</td>
+                <td>Obtiene la lista de arrendadores registrados.</td>
+              </tr>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/arrendador/{id}</td>
+                <td>Obtiene un arrendador específico.</td>
+              </tr>
+              <tr>
+                <td>POST</td>
+                <td>/api/homez/arrendador</td>
+                <td>Crea un nuevo arrendador.</td>
+              </tr>
+              <tr>
+                <td>PUT</td>
+                <td>/api/homez/arrendador</td>
+                <td>Actualiza un arrendador existente.</td>
+              </tr>
+              <tr>
+                <td>DELETE</td>
+                <td>/api/homez/arrendador/{id}</td>
+                <td>Borra un arrendador específico.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Arrendatario</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Método</th>
+                <th>Ruta del Endpoint</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/arrendatario</td>
+                <td>Obtiene la lista de arrendatarios registrados.</td>
+              </tr>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/arrendatario/{id}</td>
+                <td>Obtiene un arrendatario específico.</td>
+              </tr>
+              <tr>
+                <td>POST</td>
+                <td>/api/homez/arrendatario</td>
+                <td>Crea un nuevo arrendatario.</td>
+              </tr>
+              <tr>
+                <td>PUT</td>
+                <td>/api/homez/arrendatario</td>
+                <td>Actualiza un arrendatario existente.</td>
+              </tr>
+              <tr>
+                <td>DELETE</td>
+                <td>/api/homez/arrendatario/{id}</td>
+                <td>Borra un arrendatario específico.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Solicitud</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Método</th>
+                <th>Ruta del Endpoint</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/solicitud</td>
+                <td>Obtiene la lista de solicitudes registradas.</td>
+              </tr>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/solicitud/{id}</td>
+                <td>Obtiene una solicitud específica.</td>
+              </tr>
+              <tr>
+                <td>POST</td>
+                <td>/api/homez/solicitud</td>
+                <td>Crea una nueva solicitud.</td>
+              </tr>
+              <tr>
+                <td>PUT</td>
+                <td>/api/homez/solicitud</td>
+                <td>Actualiza una solicitud existente.</td>
+              </tr>
+              <tr>
+                <td>DELETE</td>
+                <td>/api/homez/solicitud/{id}</td>
+                <td>Borra una solicitud específica.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Estado</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Método</th>
+                <th>Ruta del Endpoint</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/estado</td>
+                <td>Obtiene la lista de estados registrados.</td>
+              </tr>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/estado/{id}</td>
+                <td>Obtiene un estado específico.</td>
+              </tr>
+              <tr>
+                <td>POST</td>
+                <td>/api/homez/estado</td>
+                <td>Crea un nuevo estado.</td>
+              </tr>
+              <tr>
+                <td>PUT</td>
+                <td>/api/homez/estado</td>
+                <td>Actualiza un estado existente.</td>
+              </tr>
+              <tr>
+                <td>DELETE</td>
+                <td>/api/homez/estado/{id}</td>
+                <td>Borra un estado específico.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Foto</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Método</th>
+                <th>Ruta del Endpoint</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/foto</td>
+                <td>Obtiene la lista de fotos registradas.</td>
+              </tr>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/foto/{id}</td>
+                <td>Obtiene una foto específica.</td>
+              </tr>
+              <tr>
+                <td>POST</td>
+                <td>/api/homez/foto</td>
+                <td>Crea una nueva foto.</td>
+              </tr>
+              <tr>
+                <td>PUT</td>
+                <td>/api/homez/foto</td>
+                <td>Actualiza una foto existente.</td>
+              </tr>
+              <tr>
+                <td>DELETE</td>
+                <td>/api/homez/foto/{id}</td>
+                <td>Borra una foto específica.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Calificacionarrendatario</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Método</th>
+                <th>Ruta del Endpoint</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/calificacionarrendatario</td>
+                <td>
+                  Obtiene la lista de calificaciones de arrendatarios
+                  registradas.
+                </td>
+              </tr>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/calificacionarrendatario/{id}</td>
+                <td>Obtiene una calificación de arrendatario específica.</td>
+              </tr>
+              <tr>
+                <td>POST</td>
+                <td>/api/homez/calificacionarrendatario</td>
+                <td>Crea una nueva calificación de arrendatario.</td>
+              </tr>
+              <tr>
+                <td>PUT</td>
+                <td>/api/homez/calificacionarrendatario</td>
+                <td>Actualiza una calificación de arrendatario existente.</td>
+              </tr>
+              <tr>
+                <td>DELETE</td>
+                <td>/api/homez/calificacionarrendatario/{id}</td>
+                <td>Borra una calificación de arrendatario específica.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Calificacionpropiedad</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Método</th>
+                <th>Ruta del Endpoint</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/calificacionpropiedad</td>
+                <td>
+                  Obtiene la lista de calificaciones de propiedades registradas.
+                </td>
+              </tr>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/calificacionpropiedad/{id}</td>
+                <td>Obtiene una calificación de propiedad específica.</td>
+              </tr>
+              <tr>
+                <td>POST</td>
+                <td>/api/homez/calificacionpropiedad</td>
+                <td>Crea una nueva calificación de propiedad.</td>
+              </tr>
+              <tr>
+                <td>PUT</td>
+                <td>/api/homez/calificacionpropiedad</td>
+                <td>Actualiza una calificación de propiedad existente.</td>
+              </tr>
+              <tr>
+                <td>DELETE</td>
+                <td>/api/homez/calificacionpropiedad/{id}</td>
+                <td>Borra una calificación de propiedad específica.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Pagoarriendo</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Método</th>
+                <th>Ruta del Endpoint</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/pagoarriendo</td>
+                <td>Obtiene la lista de pagos de arriendo registrados.</td>
+              </tr>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/pagoarriendo/{id}</td>
+                <td>Obtiene un pago de arriendo específico.</td>
+              </tr>
+              <tr>
+                <td>POST</td>
+                <td>/api/homez/pagoarriendo</td>
+                <td>Crea un nuevo pago de arriendo.</td>
+              </tr>
+              <tr>
+                <td>PUT</td>
+                <td>/api/homez/pagoarriendo</td>
+                <td>Actualiza un pago de arriendo existente.</td>
+              </tr>
+              <tr>
+                <td>DELETE</td>
+                <td>/api/homez/pagoarriendo/{id}</td>
+                <td>Borra un pago de arriendo específico.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Banco</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Método</th>
+                <th>Ruta del Endpoint</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/banco</td>
+                <td>Obtiene la lista de bancos registrados.</td>
+              </tr>
+              <tr>
+                <td>GET</td>
+                <td>/api/homez/banco/{id}</td>
+                <td>Obtiene un banco específico.</td>
+              </tr>
+              <tr>
+                <td>POST</td>
+                <td>/api/homez/banco</td>
+                <td>Crea un nuevo banco.</td>
+              </tr>
+              <tr>
+                <td>PUT</td>
+                <td>/api/homez/banco</td>
+                <td>Actualiza un banco existente.</td>
+              </tr>
+              <tr>
+                <td>DELETE</td>
+                <td>/api/homez/banco/{id}</td>
+                <td>Borra un banco específico.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Continuar con la misma estructura para las demás entidades -->
+
+          <!-- Continuar con la misma estructura para las demás entidades -->
+
+          <!-- Continuar con la misma estructura para las demás entidades -->
+
+          <!-- Continuar con la misma estructura para las demás entidades -->
+
+          <!-- Continuar con la misma estructura para las demás entidades -->
         </div>
       </div>
     </main>
@@ -365,9 +878,15 @@
           <h4>Links</h4>
           <nav>
             <a th:href="@{/grupo15/componente/proyecto}">Sobre el Proyecto</a>
-            <a th:href="@{/grupo15/componente/arquitectura}">Sobre la Arquitectura</a>
-            <a th:href="@{/grupo15/componente/requerimientos}">Sobre los Requerimientos</a>
-            <a th:href="@{/grupo15/componente/desarrollo}">Sobre el Desarrollo</a>
+            <a th:href="@{/grupo15/componente/arquitectura}"
+              >Sobre la Arquitectura</a
+            >
+            <a th:href="@{/grupo15/componente/requerimientos}"
+              >Sobre los Requerimientos</a
+            >
+            <a th:href="@{/grupo15/componente/desarrollo}"
+              >Sobre el Desarrollo</a
+            >
             <a th:href="@{/grupo15/contacto}">Contactanos</a>
           </nav>
         </div>

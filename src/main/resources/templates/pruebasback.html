@@ -314,98 +314,647 @@
             desde la perspectiva del servidor. Algunos aspectos importantes son
           </p>
 
+          <h3>Pruebas y Dependencia para la entidad Departamento</h3>
           <table>
             <thead>
               <tr>
-                <th>ID</th>
-                <th>Descripción del Caso de Prueba</th>
-                <th>Pasos a Seguir</th>
+                <th>Nombre del Método</th>
+                <th>Descripción</th>
                 <th>Resultado Esperado</th>
-                <th>Prioridad</th>
+                <th>Dependencia</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>1</td>
-                <td>Validación de Campos de Registro</td>
+                <td>testCreateDepartamento()</td>
+                <td>Prueba la creación de un nuevo departamento.</td>
                 <td>
-                  <ul>
-                    <li>Acceder a la página de registro.</li>
-                  </ul>
-                  <ul>
-                    <li>Ingresar datos válidos en todos los campos.</li>
-                  </ul>
-                  <ul>
-                    <li>Hacer clic en el botón de registro.</li>
-                  </ul>
+                  El número de departamentos aumenta en 1 después de crear uno
+                  nuevo.
                 </td>
-                <td>
-                  El sistema debería registrar al usuario y redirigir a la
-                  página de inicio de sesión.
-                </td>
-                <td>Alta</td>
+                <td>Spring Boot Test</td>
               </tr>
               <tr>
-                <td>2</td>
-                <td>Validación de Campos de Registro</td>
+                <td>testUpdateDepartamento()</td>
+                <td>Prueba la actualización de un departamento existente.</td>
                 <td>
-                  <ul>
-                    <li>Acceder a la página de registro.</li>
-                  </ul>
-                  <ul>
-                    <li>Ingresar datos válidos en todos los campos.</li>
-                  </ul>
-                  <ul>
-                    <li>Hacer clic en el botón de registro.</li>
-                  </ul>
+                  El departamento se actualiza correctamente con los datos
+                  modificados.
                 </td>
-                <td>
-                  El sistema debería registrar al usuario y redirigir a la
-                  página de inicio de sesión.
-                </td>
-                <td>Alta</td>
+                <td>Spring Boot Test</td>
               </tr>
               <tr>
-                <td>3</td>
-                <td>Validación de Campos de Registro</td>
+                <td>testGetDepartamentoById()</td>
+                <td>Prueba obtener un departamento por su ID.</td>
                 <td>
-                  <ul>
-                    <li>Acceder a la página de registro.</li>
-                  </ul>
-                  <ul>
-                    <li>Ingresar datos válidos en todos los campos.</li>
-                  </ul>
-                  <ul>
-                    <li>Hacer clic en el botón de registro.</li>
-                  </ul>
+                  Se obtiene el departamento correcto con el ID especificado.
                 </td>
-                <td>
-                  El sistema debería registrar al usuario y redirigir a la
-                  página de inicio de sesión.
-                </td>
-                <td>Alta</td>
+                <td>Spring Boot Test</td>
               </tr>
               <tr>
-                <td>4</td>
-                <td>Validación de Campos de Registro</td>
+                <td>testDeleteDepartamento()</td>
+                <td>Prueba borrar un departamento existente.</td>
                 <td>
-                  <ul>
-                    <li>Acceder a la página de registro.</li>
-                  </ul>
-                  <ul>
-                    <li>Ingresar datos válidos en todos los campos.</li>
-                  </ul>
-                  <ul>
-                    <li>Hacer clic en el botón de registro.</li>
-                  </ul>
+                  El número de departamentos disminuye en 1 después de borrar
+                  uno existente.
                 </td>
-                <td>
-                  El sistema debería registrar al usuario y redirigir a la
-                  página de inicio de sesión.
-                </td>
-                <td>Alta</td>
+                <td>Spring Boot Test</td>
               </tr>
-              <!-- Agrega más filas según sea necesario -->
+            </tbody>
+          </table>
+
+          <h3>Pruebas y Dependencia para la entidad Tipo</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre del Método</th>
+                <th>Descripción</th>
+                <th>Resultado Esperado</th>
+                <th>Dependencia</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>testCreateTipo()</td>
+                <td>Prueba la creación de un nuevo tipo.</td>
+                <td>
+                  El número de tipos aumenta en 1 después de crear uno nuevo.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testUpdateTipo()</td>
+                <td>Prueba la actualización de un tipo existente.</td>
+                <td>
+                  El tipo se actualiza correctamente con los datos modificados.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testGetTipoById()</td>
+                <td>Prueba obtener un tipo por su ID.</td>
+                <td>Se obtiene el tipo correcto con el ID especificado.</td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testDeleteTipo()</td>
+                <td>Prueba borrar un tipo existente.</td>
+                <td>
+                  El número de tipos disminuye en 1 después de borrar uno
+                  existente.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Pruebas y Dependencia para la entidad Tipoingreso</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre del Método</th>
+                <th>Descripción</th>
+                <th>Resultado Esperado</th>
+                <th>Dependencia</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>testCreateTipoingreso()</td>
+                <td>Prueba la creación de un nuevo tipo de ingreso.</td>
+                <td>
+                  El número de tipos de ingreso aumenta en 1 después de crear
+                  uno nuevo.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testUpdateTipoingreso()</td>
+                <td>
+                  Prueba la actualización de un tipo de ingreso existente.
+                </td>
+                <td>
+                  El tipo de ingreso se actualiza correctamente con los datos
+                  modificados.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testGetTipoingresoById()</td>
+                <td>Prueba obtener un tipo de ingreso por su ID.</td>
+                <td>
+                  Se obtiene el tipo de ingreso correcto con el ID especificado.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testDeleteTipoingreso()</td>
+                <td>Prueba borrar un tipo de ingreso existente.</td>
+                <td>
+                  El número de tipos de ingreso disminuye en 1 después de borrar
+                  uno existente.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Pruebas y Dependencia para la entidad Municipio</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre del Método</th>
+                <th>Descripción</th>
+                <th>Resultado Esperado</th>
+                <th>Dependencia</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>testCreateMunicipio()</td>
+                <td>Prueba la creación de un nuevo municipio.</td>
+                <td>
+                  El número de municipios aumenta en 1 después de crear uno
+                  nuevo.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testUpdateMunicipio()</td>
+                <td>Prueba la actualización de un municipio existente.</td>
+                <td>
+                  El municipio se actualiza correctamente con los datos
+                  modificados.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testGetMunicipioById()</td>
+                <td>Prueba obtener un municipio por su ID.</td>
+                <td>
+                  Se obtiene el municipio correcto con el ID especificado.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testDeleteMunicipio()</td>
+                <td>Prueba borrar un municipio existente.</td>
+                <td>
+                  El número de municipios disminuye en 1 después de borrar uno
+                  existente.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Pruebas y Dependencia para la entidad Arrendador</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre del Método</th>
+                <th>Descripción</th>
+                <th>Resultado Esperado</th>
+                <th>Dependencia</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>testCreateArrendador()</td>
+                <td>Prueba la creación de un nuevo arrendador.</td>
+                <td>
+                  El número de arrendadores aumenta en 1 después de crear uno
+                  nuevo.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testUpdateArrendador()</td>
+                <td>Prueba la actualización de un arrendador existente.</td>
+                <td>
+                  El arrendador se actualiza correctamente con los datos
+                  modificados.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testGetArrendadorById()</td>
+                <td>Prueba obtener un arrendador por su ID.</td>
+                <td>
+                  Se obtiene el arrendador correcto con el ID especificado.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testDeleteArrendador()</td>
+                <td>Prueba borrar un arrendador existente.</td>
+                <td>
+                  El número de arrendadores disminuye en 1 después de borrar uno
+                  existente.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Pruebas y Dependencia para la entidad Arrendador</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre del Método</th>
+                <th>Descripción</th>
+                <th>Resultado Esperado</th>
+                <th>Dependencia</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>testCreateArrendador()</td>
+                <td>Prueba la creación de un nuevo arrendador.</td>
+                <td>
+                  El número de arrendadores aumenta en 1 después de crear uno
+                  nuevo.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testUpdateArrendador()</td>
+                <td>Prueba la actualización de un arrendador existente.</td>
+                <td>
+                  El arrendador se actualiza correctamente con los datos
+                  modificados.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testGetArrendadorById()</td>
+                <td>Prueba obtener un arrendador por su ID.</td>
+                <td>
+                  Se obtiene el arrendador correcto con el ID especificado.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testDeleteArrendador()</td>
+                <td>Prueba borrar un arrendador existente.</td>
+                <td>
+                  El número de arrendadores disminuye en 1 después de borrar uno
+                  existente.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Pruebas y Dependencia para la entidad Solicitud</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre del Método</th>
+                <th>Descripción</th>
+                <th>Resultado Esperado</th>
+                <th>Dependencia</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>testCreateSolicitud()</td>
+                <td>Prueba la creación de una nueva solicitud.</td>
+                <td>
+                  El número de solicitudes aumenta en 1 después de crear una
+                  nueva.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testUpdateSolicitud()</td>
+                <td>Prueba la actualización de una solicitud existente.</td>
+                <td>
+                  La solicitud se actualiza correctamente con los datos
+                  modificados.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testGetSolicitudById()</td>
+                <td>Prueba obtener una solicitud por su ID.</td>
+                <td>
+                  Se obtiene la solicitud correcta con el ID especificado.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testDeleteSolicitud()</td>
+                <td>Prueba borrar una solicitud existente.</td>
+                <td>
+                  El número de solicitudes disminuye en 1 después de borrar una
+                  existente.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Pruebas y Dependencia para la entidad Estado</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre del Método</th>
+                <th>Descripción</th>
+                <th>Resultado Esperado</th>
+                <th>Dependencia</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>testCreateEstado()</td>
+                <td>Prueba la creación de un nuevo estado.</td>
+                <td>
+                  El número de estados aumenta en 1 después de crear uno nuevo.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testUpdateEstado()</td>
+                <td>Prueba la actualización de un estado existente.</td>
+                <td>
+                  El estado se actualiza correctamente con los datos
+                  modificados.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testGetEstadoById()</td>
+                <td>Prueba obtener un estado por su ID.</td>
+                <td>Se obtiene el estado correcto con el ID especificado.</td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testDeleteEstado()</td>
+                <td>Prueba borrar un estado existente.</td>
+                <td>
+                  El número de estados disminuye en 1 después de borrar uno
+                  existente.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Pruebas y Dependencia para la entidad Foto</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre del Método</th>
+                <th>Descripción</th>
+                <th>Resultado Esperado</th>
+                <th>Dependencia</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>testCreateFoto()</td>
+                <td>Prueba la creación de una nueva foto.</td>
+                <td>
+                  El número de fotos aumenta en 1 después de crear una nueva.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testUpdateFoto()</td>
+                <td>Prueba la actualización de una foto existente.</td>
+                <td>
+                  La foto se actualiza correctamente con los datos modificados.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testGetFotoById()</td>
+                <td>Prueba obtener una foto por su ID.</td>
+                <td>Se obtiene la foto correcta con el ID especificado.</td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testDeleteFoto()</td>
+                <td>Prueba borrar una foto existente.</td>
+                <td>
+                  El número de fotos disminuye en 1 después de borrar una
+                  existente.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>
+            Pruebas y Dependencia para la entidad Calificacionarrendatario
+          </h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre del Método</th>
+                <th>Descripción</th>
+                <th>Resultado Esperado</th>
+                <th>Dependencia</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>testCreateCalificacionarrendatario()</td>
+                <td>
+                  Prueba la creación de una nueva calificación para un
+                  arrendatario.
+                </td>
+                <td>
+                  El número de calificaciones de arrendatario aumenta en 1
+                  después de crear una nueva.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testUpdateCalificacionarrendatario()</td>
+                <td>
+                  Prueba la actualización de una calificación de arrendatario
+                  existente.
+                </td>
+                <td>
+                  La calificación de arrendatario se actualiza correctamente con
+                  los datos modificados.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testGetCalificacionarrendatarioById()</td>
+                <td>
+                  Prueba obtener una calificación de arrendatario por su ID.
+                </td>
+                <td>
+                  Se obtiene la calificación de arrendatario correcta con el ID
+                  especificado.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testDeleteCalificacionarrendatario()</td>
+                <td>
+                  Prueba borrar una calificación de arrendatario existente.
+                </td>
+                <td>
+                  El número de calificaciones de arrendatario disminuye en 1
+                  después de borrar una existente.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Pruebas y Dependencia para la entidad Calificacionpropiedad</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre del Método</th>
+                <th>Descripción</th>
+                <th>Resultado Esperado</th>
+                <th>Dependencia</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>testCreateCalificacionpropiedad()</td>
+                <td>
+                  Prueba la creación de una nueva calificación para una
+                  propiedad.
+                </td>
+                <td>
+                  El número de calificaciones de propiedad aumenta en 1 después
+                  de crear una nueva.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testUpdateCalificacionpropiedad()</td>
+                <td>
+                  Prueba la actualización de una calificación de propiedad
+                  existente.
+                </td>
+                <td>
+                  La calificación de propiedad se actualiza correctamente con
+                  los datos modificados.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testGetCalificacionpropiedadById()</td>
+                <td>Prueba obtener una calificación de propiedad por su ID.</td>
+                <td>
+                  Se obtiene la calificación de propiedad correcta con el ID
+                  especificado.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testDeleteCalificacionpropiedad()</td>
+                <td>Prueba borrar una calificación de propiedad existente.</td>
+                <td>
+                  El número de calificaciones de propiedad disminuye en 1
+                  después de borrar una existente.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Pruebas y Dependencia para la entidad Pagoarriendo</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre del Método</th>
+                <th>Descripción</th>
+                <th>Resultado Esperado</th>
+                <th>Dependencia</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>testCreatePagoarriendo()</td>
+                <td>Prueba la creación de un nuevo pago de arriendo.</td>
+                <td>
+                  El número de pagos de arriendo aumenta en 1 después de crear
+                  uno nuevo.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testUpdatePagoarriendo()</td>
+                <td>
+                  Prueba la actualización de un pago de arriendo existente.
+                </td>
+                <td>
+                  El pago de arriendo se actualiza correctamente con los datos
+                  modificados.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testGetPagoarriendoById()</td>
+                <td>Prueba obtener un pago de arriendo por su ID.</td>
+                <td>
+                  Se obtiene el pago de arriendo correcto con el ID
+                  especificado.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testDeletePagoarriendo()</td>
+                <td>Prueba borrar un pago de arriendo existente.</td>
+                <td>
+                  El número de pagos de arriendo disminuye en 1 después de
+                  borrar uno existente.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Pruebas y Dependencia para la entidad Banco</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre del Método</th>
+                <th>Descripción</th>
+                <th>Resultado Esperado</th>
+                <th>Dependencia</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>testCreateBanco()</td>
+                <td>Prueba la creación de un nuevo banco.</td>
+                <td>
+                  El número de bancos aumenta en 1 después de crear uno nuevo.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testUpdateBanco()</td>
+                <td>Prueba la actualización de un banco existente.</td>
+                <td>
+                  El banco se actualiza correctamente con los datos modificados.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testGetBancoById()</td>
+                <td>Prueba obtener un banco por su ID.</td>
+                <td>Se obtiene el banco correcto con el ID especificado.</td>
+                <td>Spring Boot Test</td>
+              </tr>
+              <tr>
+                <td>testDeleteBanco()</td>
+                <td>Prueba borrar un banco existente.</td>
+                <td>
+                  El número de bancos disminuye en 1 después de borrar uno
+                  existente.
+                </td>
+                <td>Spring Boot Test</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -426,9 +975,15 @@
           <h4>Links</h4>
           <nav>
             <a th:href="@{/grupo15/componente/proyecto}">Sobre el Proyecto</a>
-            <a th:href="@{/grupo15/componente/arquitectura}">Sobre la Arquitectura</a>
-            <a th:href="@{/grupo15/componente/requerimientos}">Sobre los Requerimientos</a>
-            <a th:href="@{/grupo15/componente/desarrollo}">Sobre el Desarrollo</a>
+            <a th:href="@{/grupo15/componente/arquitectura}"
+              >Sobre la Arquitectura</a
+            >
+            <a th:href="@{/grupo15/componente/requerimientos}"
+              >Sobre los Requerimientos</a
+            >
+            <a th:href="@{/grupo15/componente/desarrollo}"
+              >Sobre el Desarrollo</a
+            >
             <a th:href="@{/grupo15/contacto}">Contactanos</a>
           </nav>
         </div>
